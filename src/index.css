@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@font-face {
+    font-family: 'TeslaRentFont';
+    src: url('./assets/fonts/Harmonia Sans W01 Regular.otf') format('opentype');
+    font-weight: 400; /* Regular */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TeslaRentFont';
+    src: url('./assets/fonts/Harmonia Sans W01 Bold.otf') format('opentype');
+    font-weight: 600; /* Light */
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "TeslaRentFont", sans-serif;
+    transition: all 0.35s ease;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    scroll-behavior: smooth;
+}
+
+.hero-section {
+    background-image: linear-gradient(to top, #fff,  rgba(200, 200, 200, 0.15)), url('./assets/herowp.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    padding: 120px;
+}
+
+.hero-section h1 {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+
+.hero-section p {
+    font-size: 20px;
+    opacity: 50%;
+    margin-bottom: 100px;
+}
+
+.tesla-info h1 {
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.tesla-info p {
+    font-size: 14px;
+    opacity: 50%;
+    margin-bottom: 100px;
+}
+
+.tesla-info button, .hero-section button, .zasto-tesla button {
+    font-weight: 200;
+}
+
+.zasto-tesla {
+    padding: 100px;
+}
+
+.zasto-tesla h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+
+
+@media (max-width: 800px) {
+
+    .hero-section {
+        padding: 40px;
+        height: 500px !important;
+    }
+
+    .header-submenu {
+        display: none;
+    }
+
+    .hero-section h1 {
+        font-size: 40px;
+    }
+
+    .hero-section p {
+        font-size: 14px;
+    }
+    
+    .hero-section button {
+        width: 100%;
+    }
+
+    .tesla-info h1 {
+        font-size: 48px;
+        font-weight: 600;
+    }
+
+    .zasto-tesla {
+        padding: 20px;
+        margin-right: 20px !important;
+        margin-left: 20px !important;
+    }
+
+    .zasto-tesla h1 {
+        font-size: 30px;
+    }
+    
+    .zasto-tesla p {
+        font-size: 12px;
+    }
+
+    .zasto-tesla button {
+        width: 100%;
+    }
+
+    .tesla-rent-card {
+        height: 400px !important;
+    }
+
+    .tesla-info p {
+        font-size: 12px;
+        opacity: 50%;
+        margin-bottom: 100px;
+    }
+
+    .tesla-info button {
+        width: 100%;
+    }
+}
+
