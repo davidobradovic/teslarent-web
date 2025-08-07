@@ -1,0 +1,132 @@
+{
+  "header": {
+    "vehicles": "Fahrzeuge",
+    "reservations": "Meine Reservierungen",
+    "blog": "Blog",
+    "aboutUs": "Über uns",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "TESLA MIETWAGEN",
+    "description": "Erleben Sie den Luxus und die Innovation des elektrischen Fahrens. Entdecken Sie das ultimative Fahrerlebnis mit Tesla-Fahrzeugen – eine Mischung aus Technologie, Komfort und Umweltbewusstsein. Mieten Sie jetzt Ihren Tesla und genießen Sie kompromisslose Leistung mit modernem Design.",
+    "button": "Mieten Sie jetzt Ihren Tesla"
+  },
+  "cars": {
+    "model3": {
+      "title": "Tesla Model 3",
+      "description": "Tesla Model 3 – Eine Kombination aus Leistung und Effizienz. Geschwindigkeit, Innovation und Premium-Design in einem Fahrzeug. Genießen Sie ein außergewöhnliches elektrisches Fahrerlebnis mit großer Reichweite und fortschrittlichen Technologien, die jeden Moment unvergesslich machen.",
+      "button": "Mieten Sie jetzt Ihr Model 3"
+    },
+    "modelS": {
+      "title": "Tesla Model S",
+      "description": "Tesla Model S – Eleganz und Kraft in perfekter Balance. Erleben Sie erstklassige Leistung, luxuriöses Design und modernste Technologie. Mit großer Reichweite, schnellem Laden und innovativen Funktionen definiert das Model S das Fahrerlebnis neu und bietet unvergleichlichen Komfort und Sicherheit.",
+      "button": "Mieten Sie jetzt Ihr Model S"
+    }
+  },
+  "steps": {
+    "step1": "Wählen Sie das Tesla-Modell, das Ihren Bedürfnissen entspricht.",
+    "step2": "Prüfen Sie verfügbare Termine und buchen Sie Ihren Tesla.",
+    "step3": "Genießen Sie die Fahrt mit 24/7 Unterstützung."
+  },
+  "whyTesla": {
+    "title": "Warum Tesla Mietwagen",
+    "description": "Passen Sie Ihre Reise Ihrem Zeitplan an und genießen Sie volle Flexibilität während der Fahrt, während Sie den einzigartigen Nervenkitzel des Fahrens eines Elektroautos erleben.",
+    "button": "Reservieren Sie Ihren Tesla"
+  },
+  "makeReservationHeader": {
+    "title": "Um Reservierungen vorzunehmen, müssen Sie in unserem System registriert sein",
+    "button": "Jetzt registrieren"
+  },
+  "reservationFormHeader": {
+    "pickUp": "Abholdatum und -uhrzeit",
+    "returnAt": "Rückgabedatum und -uhrzeit",
+    "button": "Jetzt reservieren"
+  },
+  "reserveCarForm": {
+    "mileageSubtitle": "Unbegrenzte Kilometer",
+    "requiredYears": "21 Jahre erforderlich",
+    "payAtDesk": "Bezahlung vor Ort",
+    "from": "ab",
+    "day": "Tag",
+    "total": "GESAMT",
+    "selectCar": "FAHRZEUG WÄHLEN",
+    "selectedCar": "AUSGEWÄHLTES FAHRZEUG",
+    "notAvailableCar": "NICHT VERFÜGBAR"
+  },
+  "yourReservation": {
+    "title": "Ihre Reservierung",
+    "priceWithoutDiscount": "Preis ohne Rabatt",
+    "discount": "Rabatt",
+    "totalPrice": "Gesamtpreis",
+    "button": "Jetzt bezahlen"
+  },
+  "confirmReservation": {
+    "title": "Bestätigen Sie Ihre Reservierung",
+    "subtitle": "Geben Sie Ihre Reservierungs-ID ein, wählen Sie ein Bild Ihrer Gehaltsabrechnung aus und bestätigen Sie Ihre Reservierung. Es ist notwendig, eine Anzahlung per Einzahlungsschein oder persönlich zu leisten.",
+    "reservationId": "Reservierungs-ID",
+    "placeholderReservationId": "Geben Sie Ihre Reservierungs-ID ein",
+    "paymentSlip": "Zahlungsbeleg",
+    "selectImage": "Bild auswählen",
+    "paymentSlipRequirements": {
+      "title": "Anforderungen an den Zahlungsbeleg",
+      "one": "1. Betreff: Zahlung für Reservierung mit ID: #####",
+      "two": "2. Empfänger: TESLA CAR RENT-A-CAR",
+      "three": "3. Konto des Empfängers: 160-6000001746148-90"
+    },
+    "confirm": "Reservierung bestätigen",
+    "confirmingRes": "Mit der Bestätigung Ihrer Reservierung stimmen Sie unseren Allgemeinen Geschäftsbedingungen zu."
+  },
+  "authForm": {
+    "register": "Registrieren",
+    "login": "Anmelden",
+    "enterEmail": "E-Mail eingeben",
+    "enterPassword": "Passwort eingeben",
+    "signIn": "Einloggen",
+    "signUp": "Registrieren",
+    "dontHaveAccount": "Sie haben noch kein Konto?",
+    "alreadyHaveAccount": "Sie haben bereits ein Konto?",
+    "enterFullName": "Vollständigen Namen eingeben",
+    "enterPhone": "Telefonnummer eingeben"
+  },
+  "advancePayment": {
+    "title": "Anzahlung",
+    "buttonOne": "Einzahlungsschein",
+    "buttonTwo": "Live-Einzahlungszahlung"
+  },
+  "footer": {
+    "titleOne": "Wir Stehen Ihnen Zur Verfügung:",
+    "infoOne": "Adresse: Vojvode Vratka 10a, 11000 Belgrad",
+    "infoTwo": "Tätigkeit und Tätigkeitscode: 7711 - Vermietung und Leasing von Autos und leichten Nutzfahrzeugen",
+    "infoThree": "Unternehmens-ID: 21929603",
+    "infoFour": "Steuer-ID: 113813797",
+    "infoFive": "Webseite: https://teslarent.rs",
+    "infoSix": "Telefon: +381 66 12 12 00",
+    "infoSeven": "E-Mail: info@teslarent.rs",
+    "titleTwo": "Nutzungsbedingungen:",
+    "linkOne": "Bedingungen für Reklamationen, Zahlungen, Gebühren, Rückerstattungen",
+    "linkTwo": "Zahlungsbedingungen",
+    "linkThree": "Zahlungsmethoden",
+    "linkFour": "Allgemeine Geschäftsbedingungen",
+    "linkFive": "Widerrufsrecht",
+    "linkSix": "Schutz von Transaktionsdaten"
+  },
+  "dataProtection": {
+    "title": "Verzeichnis der Personen für den Datenschutz",
+    "serialNumber": "Laufende Nummer",
+    "controllerName": "Name und Nachname/Name des Verantwortlichen, d.h. Verarbeiters",
+    "controllerAddress": "Adresse/Sitz des Verantwortlichen, d.h. Verarbeiters",
+    "dpoName": "Name und Nachname des Datenschutzbeauftragten",
+    "dpoAddress": "Adresse des Datenschutzbeauftragten",
+    "dpoEmail": "E-Mail des Datenschutzbeauftragten",
+    "dpoPhone": "Telefonnummer des Datenschutzbeauftragten",
+    "data": {
+      "serialNumber": "1.",
+      "controllerName": "Tesla rent a car",
+      "controllerAddress": "Vojvode Vrtaka br.10a",
+      "dpoName": "Nikola Đorđa Knežević Rajkovića",
+      "dpoAddress": "om 019a/2/27 Novi Sad",
+      "dpoEmail": "rent.a.tesla.car@gmail.com",
+      "dpoPhone": "064/2105790"
+    }
+  }
+}

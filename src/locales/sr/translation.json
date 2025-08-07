@@ -1,0 +1,132 @@
+{
+  "header": {
+    "vehicles": "Vozila",
+    "reservations": "Moje rezervacije",
+    "blog": "Blog",
+    "aboutUs": "O nama",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "TESLA RENT A CAR",
+    "description": "Uživajte u luksuzu i inovaciji električne vožnje. Otkrijte vrhunski doživljaj vožnje uz Tesla vozila – spoj tehnologije, udobnosti i ekološke odgovornosti. Iznajmite svoju Teslu sada i uživajte u savršenim performansama i modernom dizajnu.",
+    "button": "Iznajmite Teslu sada"
+  },
+  "cars": {
+    "model3": {
+      "title": "Tesla Model 3",
+      "description": "Tesla Model 3 – Spoj performansi i efikasnosti. Brzina, inovacija i vrhunski dizajn u jednom vozilu. Uživajte u izuzetnoj vožnji s električnim pogonom, dugom autonomijom i naprednim tehnologijama koje čine svaki trenutak nezaboravnim.",
+      "button": "Iznajmite Model 3 sada"
+    },
+    "modelS": {
+      "title": "Tesla Model S",
+      "description": "Tesla Model S – Elegancija i snaga u savršenom balansu. Uživajte u vrhunskim performansama, luksuznom dizajnu i najnovijoj tehnologiji. S dugim dometom, brzim punjenjem i inovativnim funkcijama, Model S redefiniše iskustvo vožnje, pružajući neprevaziđenu udobnost i sigurnost.",
+      "button": "Iznajmite Model S sada"
+    }
+  },
+  "steps": {
+    "step1": "Izaberite Tesla model koji odgovara vašim potrebama.",
+    "step2": "Proverite dostupne datume i rezervišite Teslu.",
+    "step3": "Uživajte u vožnji uz 24/7 podršku."
+  },
+  "whyTesla": {
+    "title": "Zašto Tesla Rent a Car",
+    "description": "Prilagodite svoje putovanje svom rasporedu i uživajte u potpunoj fleksibilnosti tokom vožnje, istovremeno doživljavajući jedinstveno iskustvo vožnje električnog automobila.",
+    "button": "Rezervišite Teslu"
+  },
+  "makeReservationHeader": {
+    "title": "Da biste napravili rezervaciju, morate biti registrovani u našem sistemu",
+    "button": "Registrujte se sada"
+  },
+  "reservationFormHeader": {
+    "pickUp": "Datum i vreme preuzimanja",
+    "returnAt": "Datum i vreme vraćanja",
+    "button": "Rezerviši sada"
+  },
+  "reserveCarForm": {
+    "mileageSubtitle": "Neograničena kilometraža",
+    "requiredYears": "Potrebno 21 godina",
+    "payAtDesk": "Plaćanje na licu mesta",
+    "from": "od",
+    "day": "dan",
+    "total": "UKUPNO",
+    "selectCar": "IZABERI VOZILO",
+    "selectedCar": "IZABRANO VOZILO",
+    "notAvailableCar": "NIJE DOSTUPNO"
+  },
+  "yourReservation": {
+    "title": "Vaša rezervacija",
+    "priceWithoutDiscount": "Cena bez popusta",
+    "discount": "Popust",
+    "totalPrice": "Ukupna cena",
+    "button": "Plaćanje sada"
+  },
+  "confirmReservation": {
+    "title": "Potvrdite vašu rezervaciju",
+    "subtitle": "Unesite ID Vaše rezervacije, odaberite sliku svoje uplatnice i potvrdite rezervaciju. Potrebno je uplatiti depozit putem uplatnice ili lično",
+    "reservationId": "ID rezervacije",
+    "placeholderReservationId": "Unesite ID rezervacije",
+    "paymentSlip": "Uplatnica",
+    "selectImage": "Izaberite sliku",
+    "paymentSlipRequirements": {
+      "title": "Zahtevi za uplatnicu",
+      "one": "1. Naslov: Uplata za rezervaciju sa ID-jem: #####",
+      "two": "2. Primalac: TESLA CAR RENT-A-CAR",
+      "three": "3. Račun primaoca: 160-6000001746148-90"
+    },
+    "confirm": "Potvrdi rezervaciju",
+    "confirmingRes": "Potvrđivanjem rezervacije prihvatate naše uslove korišćenja."
+  },
+  "authForm": {
+    "register": "Registracija",
+    "login": "Prijava",
+    "enterEmail": "Unesite email",
+    "enterPassword": "Unesite lozinku",
+    "signIn": "Prijavite se",
+    "signUp": "Registrujte se",
+    "dontHaveAccount": "Nemate nalog?",
+    "alreadyHaveAccount": "Već imate nalog?",
+    "enterFullName": "Unesite puno ime",
+    "enterPhone": "Unesite broj telefona"
+  },
+  "advancePayment": {
+    "title": "Uplata depozita",
+    "buttonOne": "Uplatnica za depozit",
+    "buttonTwo": "Plaćanje depozita uživo"
+  },
+  "footer": {
+    "titleOne": "Stojimo Vam Na Raspolaganju:",
+    "infoOne": "Adresa: Vojvode Vratka 10a, 11000 Beograd",
+    "infoTwo": "Delatnost i Šifra Delatnosti: 7711 - Iznajmljivanje i lizing automobila i lakih motornih vozila",
+    "infoThree": "Matični Broj: 21929603",
+    "infoFour": "Poreski Broj: 113813797",
+    "infoFive": "Web Adresa: https://teslarent.rs",
+    "infoSix": "Telefon: +381 66 12 12 00",
+    "infoSeven": "E-Mail: info@teslarent.rs",
+    "titleTwo": "Uslovi Korišćenja Usluga:",
+    "linkOne": "Uslovi Reklamacije, Plaćanja, Naknade, Povraćaja Novca",
+    "linkTwo": "Uslovi Plaćanja",
+    "linkThree": "Način Plaćanja",
+    "linkFour": "Opšti Uslovi",
+    "linkFive": "Pravo na odustajanje",
+    "linkSix": "Zaštita podataka o transakciji"
+  },
+  "dataProtection": {
+    "title": "Евиденција лица за заштиту података",
+    "serialNumber": "Редни број",
+    "controllerName": "Име и презиме/назив руковаоца, односно обрађивача",
+    "controllerAddress": "Адреса/седиште руковаоца, односно обрађивача",
+    "dpoName": "Име и презиме лица за заштиту података",
+    "dpoAddress": "Адреса лица за заштиту података",
+    "dpoEmail": "Имејл лица за заштиту података",
+    "dpoPhone": "Број телефона лица за заштиту података",
+    "data": {
+      "serialNumber": "1.",
+      "controllerName": "Tesla rent a car",
+      "controllerAddress": "Vojvode Vrtaka br.10a",
+      "dpoName": "Nikola Đorđa Knežević Rajkovića",
+      "dpoAddress": "om 019a/2/27 Novi Sad",
+      "dpoEmail": "rent.a.tesla.car@gmail.com",
+      "dpoPhone": "064/2105790"
+    }
+  }
+}

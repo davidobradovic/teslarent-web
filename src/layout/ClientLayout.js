@@ -1,9 +1,20 @@
-import { UserRound, Menu, X } from 'lucide-react';
+import {  Menu, X } from 'lucide-react';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Cookies from 'js-cookie';
+import { useAppContext } from '../context/ApplicationContext';
 
 function ClientLayout({ children }) {
+
+    const { user } = useAppContext();
+
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+    const signOut = async () => {
+        Cookies.remove('authToken');
+        Cookies.remove('userId');
+        window.location.href = '/auth';
+    }
 
     return (
         <div className="w-screen h-screen flex flex-col md:flex-row">
@@ -22,23 +33,37 @@ function ClientLayout({ children }) {
                     <img src={require('../assets/teslalogo.png')} alt="Tesla Logo" style={{ height: 40 }} />
                 </div>
 
-                <nav className="flex flex-col gap-3">
-                    <Link to="/client" onClick={() => {
-                        setIsSidebarOpen(false)
-                    }} className="flex items-center gap-3 p-3 rounded bg-[#F7F7F7] hover:bg-[#ddd] transition">
-                        <span className="text-sm">Dashboard</span>
-                    </Link>
-                    <Link to="/client/my-reservations" onClick={() => {
-                        setIsSidebarOpen(false)
-                    }} className="flex items-center gap-3 p-3 rounded bg-[#F7F7F7] hover:bg-[#ddd] transition">
-                        <span className="text-sm">My reservations</span>
-                    </Link>
-                    <Link to="/client/current-reservation" onClick={() => {
-                        setIsSidebarOpen(false)
-                    }} className="flex items-center gap-3 p-3 rounded bg-[#F7F7F7] hover:bg-[#ddd] transition">
-                        <span className="text-sm">Current vehicle</span>
-                    </Link>
-                </nav>
+                {
+                    user?.role === 'administrator' ? (
+                        <nav className="flex flex-col gap-3">
+                            <Link to="/client/all-reservations" onClick={() => {
+                                setIsSidebarOpen(false)
+                            }} className="flex items-center gap-3 p-3 rounded bg-[#F7F7F7] hover:bg-[#ddd] transition">
+                                <span className="text-sm">All reservations</span>
+                            </Link>
+                            <Link to="/client/all-vehicles" onClick={() => {
+                                setIsSidebarOpen(false)
+                            }} className="flex items-center gap-3 p-3 rounded bg-[#F7F7F7] hover:bg-[#ddd] transition">
+                                <span className="text-sm">All vehicles</span>
+                            </Link>
+                            <Link to="/client/users" onClick={() => {
+                                setIsSidebarOpen(false)
+                            }} className="flex items-center gap-3 p-3 rounded bg-[#F7F7F7] hover:bg-[#ddd] transition">
+                                <span className="text-sm">Users</span>
+                            </Link>
+                        </nav>
+                    ) : (
+                        <nav className="flex flex-col gap-3">
+                            <Link to="/client" onClick={() => {
+                                setIsSidebarOpen(false)
+                            }} className="flex items-center gap-3 p-3 rounded bg-[#F7F7F7] hover:bg-[#ddd] transition">
+                                <span className="text-sm">My reservations</span>
+                            </Link>
+                        </nav>
+                    )
+                }
+
+
 
                 <div className="mt-auto flex flex-col gap-3">
                     <Link to="/client/settings" onClick={() => {
@@ -46,9 +71,9 @@ function ClientLayout({ children }) {
                     }} className="flex items-center gap-3 p-3 rounded bg-[#F7F7F7] hover:bg-[#ddd] transition">
                         <span className="text-sm">Settings</span>
                     </Link>
-                    <Link className="flex items-center gap-3 p-3 rounded bg-[#F7F7F7] hover:bg-[#ddd] border transition">
+                    <button onClick={signOut} className="flex items-center gap-3 p-3 rounded bg-[#F7F7F7] hover:bg-[#ddd] border transition">
                         <span className="text-sm">Sign out</span>
-                    </Link>
+                    </button>
                 </div>
             </div>
 
@@ -57,7 +82,7 @@ function ClientLayout({ children }) {
                     <button onClick={() => setIsSidebarOpen(true)} className="text-black">
                         <Menu size={24} />
                     </button>
-                    <h3>Dobrodošli, David</h3>
+                    <h3 className='font-bold'>Welcome back</h3>
                 </header>
 
                 <div className="p-4">{children}</div>

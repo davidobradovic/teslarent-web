@@ -3,7 +3,7 @@ import { DayPicker } from "react-day-picker";
 import "react-day-picker/style.css";
 import "./DateTimePicker.css";
 
-const DateTimePicker = ({ onClose, onConfirm }) => {
+const DateTimePicker = ({ onClose, onConfirm, disabled }) => {
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedTime, setSelectedTime] = useState("");
 
@@ -52,6 +52,7 @@ const DateTimePicker = ({ onClose, onConfirm }) => {
         <DayPicker
           mode="single"
           selected={selectedDate}
+          disabled={disabled}
           onSelect={setSelectedDate}
           styles={{
             caption: { color: "#59c23d" },

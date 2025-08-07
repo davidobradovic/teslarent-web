@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "502751440627",
+    "project_id": "skiberg-3c1e4",
+    "storage_bucket": "skiberg-3c1e4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502751440627:android:1861fc80ffc9061542d186",
+        "android_client_info": {
+          "package_name": "com.dakilimaster.skiberg"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZaEAL5lG0X4DxG-kzF3AjScFfJz2Ebr0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,132 @@
+{
+  "header": {
+    "vehicles": "Vehicles",
+    "reservations": "My reservations",
+    "blog": "Blog",
+    "aboutUs": "About Us",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "TESLA RENT A CAR",
+    "description": "Experience the luxury and innovation of electric driving. Discover the ultimate driving experience with Tesla vehicles – a blend of technology, comfort, and eco-responsibility. Rent your Tesla now and enjoy uncompromised performance with a modern design.",
+    "button": "Rent your Tesla now"
+  },
+  "cars": {
+    "model3": {
+      "title": "Tesla Model 3",
+      "description": "Tesla Model 3 – A blend of performance and efficiency. Speed, innovation, and premium design in one vehicle. Enjoy an exceptional electric driving experience with long-range autonomy and advanced technologies that make every moment unforgettable.",
+      "button": "Rent your Model 3 now"
+    },
+    "modelS": {
+      "title": "Tesla Model S",
+      "description": "Tesla Model S – Elegance and power in perfect balance. Enjoy top-tier performance, luxurious design, and the latest technology. With long range, fast charging, and innovative features, Model S redefines driving with unparalleled comfort and safety.",
+      "button": "Rent your Model S now"
+    }
+  },
+  "steps": {
+    "step1": "Choose the Tesla Model that suits your needs.",
+    "step2": "Check available dates and book your Tesla.",
+    "step3": "Enjoy the drive with 24/7 support."
+  },
+  "whyTesla": {
+    "title": "Why Tesla Rent a Car",
+    "description": "Customize your trip to your schedule and enjoy complete flexibility during your drive while experiencing the unique thrill of driving an electric car.",
+    "button": "Reserve your Tesla"
+  },
+  "makeReservationHeader": {
+    "title": "To make reservations you need to be registed in our system",
+    "button": "Register now"
+  },
+  "reservationFormHeader": {
+    "pickUp": "Pick-up date & time",
+    "returnAt": "Return date & time",
+    "button": "Reserve now"
+  },
+  "reserveCarForm": {
+    "mileageSubtitle": "Unlimited mileage",
+    "requiredYears": "21 years required",
+    "payAtDesk": "Pay at desk",
+    "from": "from",
+    "day": "day",
+    "total": "TOTAL",
+    "selectCar": "SELECT CAR",
+    "selectedCar": "SELECTED CAR",
+    "notAvailableCar": "NOT AVAILABLE"
+  },
+  "yourReservation": {
+    "title": "Your reservation",
+    "priceWithoutDiscount": "Price without discount",
+    "discount": "Discount",
+    "totalPrice": "Total price",
+    "button": "Checkout now"
+  },
+  "confirmReservation": {
+    "title": "Confirm your reservation",
+    "subtitle": "Enter your reservation ID, select a picture of your pay slip and confirm your reservation. It is necessary to pay a deposit via a payment slip or in person",
+    "reservationId": "Reservation ID",
+    "placeholderReservationId": "Enter your reservation ID",
+    "paymentSlip": "Payment slip",
+    "selectImage": "Select image",
+    "paymentSlipRequirements": {
+      "title": "Payment slip requirements",
+      "one": "1. Subject: Payment for reservation with ID: #####",
+      "two": "2. Receiver: TESLA CAR RENT-A-CAR",
+      "three": "3. Recipient's Account: 160-6000001746148-90"
+    },
+    "confirm": "Confirm Reservation",
+    "confirmingRes": "By confirming your reservation, you agree to our terms and conditions."
+  },
+  "authForm": {
+    "register": "Register",
+    "login": "Login",
+    "enterEmail": "Enter email",
+    "enterPassword": "Enter password",
+    "signIn": "Sign in",
+    "signUp": "Sign up",
+    "dontHaveAccount": "Don't have and account?",
+    "alreadyHaveAccount": "Already have an account?",
+    "enterFullName": "Enter full name",
+    "enterPhone": "Enter phone number"
+  },
+  "advancePayment": {
+    "title": "Deposit Payment",
+    "buttonOne": "Deposit slip",
+    "buttonTwo": "Live deposit payment"
+  },
+  "footer": {
+    "titleOne": "We Are at Your Service:",
+    "infoOne": "Address: Vojvode Vratka 10a, 11000 Belgrade",
+    "infoTwo": "Activity and Activity Code: 7711 - Rental and Leasing of Cars and Light Motor Vehicles",
+    "infoThree": "Company ID: 21929603",
+    "infoFour": "Tax ID: 113813797",
+    "infoFive": "Website: https://teslarent.rs",
+    "infoSix": "Phone: +381 66 12 12 00",
+    "infoSeven": "Email: info@teslarent.rs",
+    "titleTwo": "Terms of Service:",
+    "linkOne": "Terms of Complaints, Payments, Fees, Refunds",
+    "linkTwo": "Payment Terms",
+    "linkThree": "Payment Methods",
+    "linkFour": "General Terms",
+    "linkFive": "Right to Withdraw",
+    "linkSix": "Protection of Transaction Data"
+  },
+  "dataProtection": {
+    "title": "Record of persons for data protection",
+    "serialNumber": "Serial number",
+    "controllerName": "Name and surname/name of the controller, i.e., processor",
+    "controllerAddress": "Address/seat of the controller, i.e., processor",
+    "dpoName": "Name and surname of the data protection officer",
+    "dpoAddress": "Address of the data protection officer",
+    "dpoEmail": "Email of the data protection officer",
+    "dpoPhone": "Phone number of the data protection officer",
+    "data": {
+      "serialNumber": "1.",
+      "controllerName": "Tesla rent a car",
+      "controllerAddress": "Vojvode Vrtaka br.10a",
+      "dpoName": "Nikola Đorđa Knežević Rajkovića",
+      "dpoAddress": "om 019a/2/27 Novi Sad",
+      "dpoEmail": "rent.a.tesla.car@gmail.com",
+      "dpoPhone": "064/2105790"
+    }
+  }
+}

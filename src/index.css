@@ -87,9 +87,6 @@ html {
         height: 500px !important;
     }
 
-    .header-submenu {
-        display: none;
-    }
 
     .hero-section h1 {
         font-size: 40px;
@@ -140,4 +137,3 @@ html {
         width: 100%;
     }
 }
-
