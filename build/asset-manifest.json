@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.816015c0.css",
+    "main.js": "/static/js/main.c4ac9732.js",
+    "static/js/685.bbd743e0.chunk.js": "/static/js/685.bbd743e0.chunk.js",
+    "static/media/herowp.jpg": "/static/media/herowp.15dfe351e364afea8ca3.jpg",
+    "static/media/nikolatesla.png": "/static/media/nikolatesla.7c4804da13775c522c60.png",
+    "static/media/Harmonia Sans W01 Regular.otf": "/static/media/Harmonia Sans W01 Regular.9211422535a438e1a337.otf",
+    "static/media/Harmonia Sans W01 Bold.otf": "/static/media/Harmonia Sans W01 Bold.9c1412d165653d6187e2.otf",
+    "static/media/awd.png": "/static/media/awd.a28e9a4fa15c800397d3.png",
+    "index.html": "/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.816015c0.css",
+    "static/js/main.c4ac9732.js"
+  ]
+}
