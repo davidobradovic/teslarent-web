@@ -12,13 +12,33 @@
     "titleHighlight": "Tesla Rental",
     "insuranceLabel": "Insurance & maintenance:",
     "insuranceValue": "Included",
-    "depositLabel": "No deposit:",
-    "depositValue": "Yes",
+    "depositLabel": "Deposit:",
+    "depositValue": "€1,000",
     "priceFrom": "Price from:",
     "perDay": "/day",
     "unlimitedMileage": "Unlimited mileage",
-    "minAge": "21+ years required",
+    "minAge": "21+ years, 3+ years license",
     "bookNow": "Book Now"
+  },
+  "pricing": {
+    "title": "Transparent Pricing",
+    "subtitle": "The longer you rent, the more you save",
+    "deposit": "Deposit",
+    "depositAmount": "€1,000",
+    "depositNote": "Refundable upon vehicle return",
+    "requirements": "Requirements",
+    "requirementAge": "Minimum 21 years old",
+    "requirementLicense": "Valid driver's license for 3+ years",
+    "tiers": {
+      "tier1": { "days": "1-3 days", "price": "€100", "perDay": "/day" },
+      "tier2": { "days": "4-7 days", "price": "€85", "perDay": "/day" },
+      "tier3": { "days": "8-15 days", "price": "€75", "perDay": "/day" },
+      "tier4": { "days": "16-24 days", "price": "€60", "perDay": "/day" },
+      "tier5": { "days": "25-29 days", "price": "€50", "perDay": "/day" },
+      "tier6": { "days": "30+ days", "price": "€40", "perDay": "/day" }
+    },
+    "saveBadge": "Save up to 60%",
+    "popular": "Most Popular"
   },
   "rental": {
     "subtitle": "Tesla Rent A Car",
@@ -84,7 +104,7 @@
     "subtitle": "Comparison",
     "title": "Why drive with Tesla Rent?",
     "features": {
-      "noDeposit": "No deposit required",
+      "noDeposit": "Refundable €1,000 deposit",
       "noHiddenFees": "No hidden fees",
       "registrationIncluded": "Registration included",
       "maintenanceIncluded": "Maintenance included",
@@ -122,15 +142,15 @@
   "faq": {
     "title": "Frequently Asked Questions",
     "q1": "What documents do I need to rent?",
-    "a1": "You need a valid driver's license, ID card or passport, and a credit card in the driver's name.",
+    "a1": "You need a valid driver's license (held for at least 3 years), ID card or passport, and proof of address. Minimum age is 21 years.",
     "q2": "Is insurance included in the price?",
     "a2": "Yes, all our vehicles come with full insurance included in the daily price.",
-    "q3": "Can I extend my rental?",
-    "a3": "Yes, you can extend your rental at any time, subject to availability.",
+    "q3": "What is the deposit amount?",
+    "a3": "The deposit is €1,000, fully refundable upon return of the vehicle in good condition.",
     "q4": "How many kilometers are included?",
     "a4": "We offer unlimited mileage on all our rentals.",
-    "q5": "Where can I pick up the vehicle?",
-    "a5": "You can pick up the vehicle at our Belgrade location or we can arrange delivery to your address."
+    "q5": "What are the pricing tiers?",
+    "a5": "1-3 days: €100/day, 4-7 days: €85/day, 8-15 days: €75/day, 16-24 days: €60/day, 25-29 days: €50/day, 30+ days: €40/day."
   },
   "testDrive": {
     "subtitle": "Book a Test Drive",
@@ -221,6 +241,7 @@
     "pageTitle": "Choose Your Tesla",
     "pageSubtitle": "Select dates and find your perfect electric vehicle",
     "availableVehicles": "Available Vehicles",
+    "pricingNote": "Price depends on rental duration",
     "authNotice": {
       "title": "Register to make a reservation",
       "subtitle": "Create an account to book your Tesla",
@@ -241,9 +262,14 @@
     "features": {
       "unlimitedMileage": "Unlimited mileage",
       "insurance": "Full insurance included",
-      "minAge": "Minimum age: 21 years"
+      "minAge": "Min. 21 years, 3+ years license"
     },
-    "price": { "payAtDesk": "Pay at pickup", "day": "day", "total": "Total" },
+    "price": {
+      "payAtDesk": "Pay at pickup",
+      "day": "day",
+      "total": "Total",
+      "from": "from"
+    },
     "buttons": {
       "select": "Select Vehicle",
       "selected": "Selected",
@@ -258,6 +284,11 @@
       "duration": "Duration",
       "discount": "Discount",
       "total": "Total Price",
+      "deposit": "Deposit (refundable)",
+      "depositNote": "Paid at pickup, refunded on return",
+      "requirements": "Requirements",
+      "requirementAge": "Minimum 21 years old",
+      "requirementLicense": "Driver's license 3+ years",
       "back": "Back",
       "confirm": "Confirm Reservation"
     }
@@ -370,8 +401,7 @@
     "saveChanges": "Save Changes",
     "createVehicle": "Create Vehicle",
     "vehicleCreated": "Vehicle created successfully!",
-    "vehicleCreateFailed": "Failed to create vehicle",
-    "total": "Total"
+    "vehicleCreateFailed": "Failed to create vehicle"
   },
   "myReservations": {
     "title": "My Reservations",

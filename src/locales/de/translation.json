@@ -12,13 +12,33 @@
     "titleHighlight": "Tesla Miete",
     "insuranceLabel": "Versicherung & Wartung:",
     "insuranceValue": "Inklusive",
-    "depositLabel": "Keine Kaution:",
-    "depositValue": "Ja",
+    "depositLabel": "Kaution:",
+    "depositValue": "€1.000",
     "priceFrom": "Preis ab:",
     "perDay": "/Tag",
     "unlimitedMileage": "Unbegrenzte Kilometer",
-    "minAge": "Mindestalter 21 Jahre",
+    "minAge": "21+ Jahre, 3+ Jahre Führerschein",
     "bookNow": "Jetzt Buchen"
+  },
+  "pricing": {
+    "title": "Transparente Preise",
+    "subtitle": "Je länger Sie mieten, desto mehr sparen Sie",
+    "deposit": "Kaution",
+    "depositAmount": "€1.000",
+    "depositNote": "Erstattungsfähig bei Fahrzeugrückgabe",
+    "requirements": "Anforderungen",
+    "requirementAge": "Mindestalter 21 Jahre",
+    "requirementLicense": "Führerschein seit 3+ Jahren",
+    "tiers": {
+      "tier1": { "days": "1-3 Tage", "price": "€100", "perDay": "/Tag" },
+      "tier2": { "days": "4-7 Tage", "price": "€85", "perDay": "/Tag" },
+      "tier3": { "days": "8-15 Tage", "price": "€75", "perDay": "/Tag" },
+      "tier4": { "days": "16-24 Tage", "price": "€60", "perDay": "/Tag" },
+      "tier5": { "days": "25-29 Tage", "price": "€50", "perDay": "/Tag" },
+      "tier6": { "days": "30+ Tage", "price": "€40", "perDay": "/Tag" }
+    },
+    "saveBadge": "Bis zu 60% sparen",
+    "popular": "Am beliebtesten"
   },
   "rental": {
     "subtitle": "Tesla Rent A Car",
@@ -66,7 +86,7 @@
     "subtitle": "Vergleich",
     "title": "Warum Tesla Rent?",
     "features": {
-      "noDeposit": "Keine Kaution",
+      "noDeposit": "Erstattungsfähige €1.000 Kaution",
       "noHiddenFees": "Keine Gebühren",
       "registrationIncluded": "Anmeldung inklusive",
       "maintenanceIncluded": "Wartung inklusive",
@@ -100,15 +120,15 @@
   "faq": {
     "title": "Häufige Fragen",
     "q1": "Welche Dokumente?",
-    "a1": "Führerschein, Ausweis, Karte.",
+    "a1": "Führerschein (mindestens 3 Jahre), Ausweis und Adressnachweis. Mindestalter 21 Jahre.",
     "q2": "Versicherung?",
     "a2": "Ja, inklusive.",
-    "q3": "Verlängern?",
-    "a3": "Ja, jederzeit.",
+    "q3": "Wie hoch ist die Kaution?",
+    "a3": "Die Kaution beträgt €1.000, vollständig erstattungsfähig bei ordnungsgemäßer Rückgabe.",
     "q4": "Kilometer?",
     "a4": "Unbegrenzt.",
-    "q5": "Abholen?",
-    "a5": "Belgrad oder Lieferung."
+    "q5": "Preisstufen?",
+    "a5": "1-3 Tage: €100/Tag, 4-7 Tage: €85/Tag, 8-15 Tage: €75/Tag, 16-24 Tage: €60/Tag, 25-29 Tage: €50/Tag, 30+ Tage: €40/Tag."
   },
   "testDrive": {
     "subtitle": "Probefahrt",
@@ -193,8 +213,9 @@
   },
   "vehicles": {
     "pageTitle": "Tesla Wählen",
-    "pageSubtitle": "Daten und Fahrzeug",
+    "pageSubtitle": "Daten und Fahrzeug finden",
     "availableVehicles": "Verfügbar",
+    "pricingNote": "Preis abhängig von der Mietdauer",
     "authNotice": {
       "title": "Registrieren",
       "subtitle": "Konto erstellen",
@@ -215,9 +236,14 @@
     "features": {
       "unlimitedMileage": "Unbegrenzt",
       "insurance": "Versicherung",
-      "minAge": "21 Jahre"
+      "minAge": "Min. 21 Jahre, 3+ Jahre Führerschein"
     },
-    "price": { "payAtDesk": "Vor Ort", "day": "Tag", "total": "Gesamt" },
+    "price": {
+      "payAtDesk": "Vor Ort zahlen",
+      "day": "Tag",
+      "total": "Gesamt",
+      "from": "ab"
+    },
     "buttons": {
       "select": "Wählen",
       "selected": "Gewählt",
@@ -232,6 +258,11 @@
       "duration": "Dauer",
       "discount": "Rabatt",
       "total": "Gesamt",
+      "deposit": "Kaution (erstattungsfähig)",
+      "depositNote": "Bei Abholung zahlen, bei Rückgabe erstattet",
+      "requirements": "Anforderungen",
+      "requirementAge": "Mindestalter 21 Jahre",
+      "requirementLicense": "Führerschein 3+ Jahre",
       "back": "Zurück",
       "confirm": "Bestätigen"
     }
@@ -384,28 +415,28 @@
     "vehicleControls": "Fahrzeug",
     "climate": "Klima",
     "battery": "Batterie",
-    "selectSection": "Wählen Sie einen Bereich",
+    "selectSection": "Bereich wählen",
     "on": "An",
     "off": "Aus",
     "front": "Vorne",
     "rear": "Hinten",
     "lock_doors": "Türen sperren",
-    "unlock_doors": "Türen entsperren",
+    "unlock_doors": "Entsperren",
     "honk_horn": "Hupen",
     "flash_lights": "Lichthupe",
-    "open_trunk": "Kofferraum öffnen",
-    "start_vehicle": "Fahrzeug starten",
-    "fold_mirrors": "Spiegel einklappen",
-    "enable_sentry_mode": "Wächtermodus",
-    "start_climate": "Klima starten",
+    "open_trunk": "Kofferraum",
+    "start_vehicle": "Starten",
+    "fold_mirrors": "Spiegel",
+    "enable_sentry_mode": "Wächter",
+    "start_climate": "Klima",
     "temperature": "Temperatur",
     "enable_defrost": "Entfrosten",
     "seat_heater": "Sitzheizung",
-    "steering_heater": "Lenkradheizung",
-    "start_charging": "Laden starten",
-    "stop_charging": "Laden stoppen",
-    "charging_limit": "Ladelimit",
-    "open_charge_port": "Ladeanschluss"
+    "steering_heater": "Lenkrad",
+    "start_charging": "Laden",
+    "stop_charging": "Stoppen",
+    "charging_limit": "Limit",
+    "open_charge_port": "Anschluss"
   },
   "notFound": {
     "title": "Nicht gefunden",

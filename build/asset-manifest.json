@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e46bfa61.css",
-    "main.js": "/static/js/main.f565b815.js",
+    "main.css": "/static/css/main.a9bfdffc.css",
+    "main.js": "/static/js/main.8a426f8b.js",
     "static/js/685.bbd743e0.chunk.js": "/static/js/685.bbd743e0.chunk.js",
     "static/media/herowp.jpg": "/static/media/herowp.15dfe351e364afea8ca3.jpg",
     "static/media/Harmonia Sans W01 Regular.otf": "/static/media/Harmonia Sans W01 Regular.9211422535a438e1a337.otf",
@@ -9,7 +9,7 @@
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.e46bfa61.css",
-    "static/js/main.f565b815.js"
+    "static/css/main.a9bfdffc.css",
+    "static/js/main.8a426f8b.js"
   ]
 }

@@ -12,13 +12,33 @@
     "titleHighlight": "Tesla najam",
     "insuranceLabel": "Osiguranje:",
     "insuranceValue": "Uključeno",
-    "depositLabel": "Bez depozita:",
-    "depositValue": "Da",
+    "depositLabel": "Depozit:",
+    "depositValue": "€1.000",
     "priceFrom": "Cena od:",
     "perDay": "/dan",
     "unlimitedMileage": "Neograničena km",
-    "minAge": "21+ godina",
+    "minAge": "21+ godina, 3+ godine dozvole",
     "bookNow": "Rezerviši"
+  },
+  "pricing": {
+    "title": "Transparentne cene",
+    "subtitle": "Što duže iznajmljujete, više štedite",
+    "deposit": "Depozit",
+    "depositAmount": "€1.000",
+    "depositNote": "Vraća se pri vraćanju vozila",
+    "requirements": "Uslovi",
+    "requirementAge": "Minimum 21 godina života",
+    "requirementLicense": "Vozačka dozvola minimum 3 godine",
+    "tiers": {
+      "tier1": { "days": "1-3 dana", "price": "€100", "perDay": "/dan" },
+      "tier2": { "days": "4-7 dana", "price": "€85", "perDay": "/dan" },
+      "tier3": { "days": "8-15 dana", "price": "€75", "perDay": "/dan" },
+      "tier4": { "days": "16-24 dana", "price": "€60", "perDay": "/dan" },
+      "tier5": { "days": "25-29 dana", "price": "€50", "perDay": "/dan" },
+      "tier6": { "days": "30+ dana", "price": "€40", "perDay": "/dan" }
+    },
+    "saveBadge": "Uštedite do 60%",
+    "popular": "Najpopularnije"
   },
   "rental": {
     "subtitle": "Tesla Rent A Car",
@@ -63,7 +83,7 @@
     "subtitle": "Poređenje",
     "title": "Zašto Tesla Rent?",
     "features": {
-      "noDeposit": "Bez depozita",
+      "noDeposit": "Povrativi depozit €1.000",
       "noHiddenFees": "Bez troškova",
       "registrationIncluded": "Registracija",
       "maintenanceIncluded": "Održavanje",
@@ -92,16 +112,16 @@
   },
   "faq": {
     "title": "FAQ",
-    "q1": "Dokumenti?",
-    "a1": "Vozačka, lična, kartica.",
+    "q1": "Koji dokumenti?",
+    "a1": "Vozačka dozvola (minimum 3 godine), lična karta i dokaz o adresi. Minimum 21 godina.",
     "q2": "Osiguranje?",
     "a2": "Da, uključeno.",
-    "q3": "Produženje?",
-    "a3": "Da, bilo kad.",
+    "q3": "Koliki je depozit?",
+    "a3": "Depozit iznosi €1.000, u potpunosti se vraća pri vraćanju vozila u dobrom stanju.",
     "q4": "Kilometri?",
     "a4": "Neograničeno.",
-    "q5": "Preuzimanje?",
-    "a5": "Beograd ili dostava."
+    "q5": "Cene?",
+    "a5": "1-3 dana: €100/dan, 4-7 dana: €85/dan, 8-15 dana: €75/dan, 16-24 dana: €60/dan, 25-29 dana: €50/dan, 30+ dana: €40/dan."
   },
   "testDrive": {
     "subtitle": "Test vožnja",
@@ -184,6 +204,7 @@
     "pageTitle": "Odaberite Tesla",
     "pageSubtitle": "Datumi i vozilo",
     "availableVehicles": "Dostupna",
+    "pricingNote": "Cena zavisi od trajanja najma",
     "authNotice": {
       "title": "Registrujte se",
       "subtitle": "Kreirajte nalog",
@@ -204,9 +225,14 @@
     "features": {
       "unlimitedMileage": "Neograničeno",
       "insurance": "Osiguranje",
-      "minAge": "21 god"
+      "minAge": "Min. 21 god, 3+ god dozvole"
     },
-    "price": { "payAtDesk": "Na licu mesta", "day": "dan", "total": "Ukupno" },
+    "price": {
+      "payAtDesk": "Plaćanje na licu mesta",
+      "day": "dan",
+      "total": "Ukupno",
+      "from": "od"
+    },
     "buttons": {
       "select": "Izaberi",
       "selected": "Izabrano",
@@ -221,6 +247,11 @@
       "duration": "Trajanje",
       "discount": "Popust",
       "total": "Ukupno",
+      "deposit": "Depozit (povrativi)",
+      "depositNote": "Plaća se pri preuzimanju, vraća pri vraćanju",
+      "requirements": "Uslovi",
+      "requirementAge": "Minimum 21 godina života",
+      "requirementLicense": "Vozačka dozvola 3+ godine",
       "back": "Nazad",
       "confirm": "Potvrdi"
     }
@@ -373,28 +404,28 @@
     "vehicleControls": "Vozilo",
     "climate": "Klima",
     "battery": "Baterija",
-    "selectSection": "Izaberite sekciju za kontrolu vozila",
+    "selectSection": "Izaberite sekciju",
     "on": "Uključeno",
     "off": "Isključeno",
     "front": "Prednji",
     "rear": "Zadnji",
-    "lock_doors": "Zaključaj vrata",
-    "unlock_doors": "Otključaj vrata",
+    "lock_doors": "Zaključaj",
+    "unlock_doors": "Otključaj",
     "honk_horn": "Svirni",
-    "flash_lights": "Trepni svetlima",
-    "open_trunk": "Otvori gepek",
-    "start_vehicle": "Pokreni vozilo",
-    "fold_mirrors": "Sklopi retrovizore",
-    "enable_sentry_mode": "Stražar mod",
-    "start_climate": "Uključi klimu",
+    "flash_lights": "Svetla",
+    "open_trunk": "Gepek",
+    "start_vehicle": "Pokreni",
+    "fold_mirrors": "Retrovizori",
+    "enable_sentry_mode": "Stražar",
+    "start_climate": "Klima",
     "temperature": "Temperatura",
     "enable_defrost": "Odmrzavanje",
-    "seat_heater": "Grejanje sedišta",
-    "steering_heater": "Grejanje volana",
-    "start_charging": "Počni punjenje",
-    "stop_charging": "Zaustavi punjenje",
-    "charging_limit": "Limit punjenja",
-    "open_charge_port": "Otvori port"
+    "seat_heater": "Sedište",
+    "steering_heater": "Volan",
+    "start_charging": "Punjenje",
+    "stop_charging": "Zaustavi",
+    "charging_limit": "Limit",
+    "open_charge_port": "Port"
   },
   "notFound": {
     "title": "Nije pronađeno",
