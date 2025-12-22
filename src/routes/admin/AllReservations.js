@@ -1,153 +1,205 @@
-import React, { useEffect, useState } from "react";
-import { ShoppingBag, Sun, User, Users, DoorOpen, Snowflake, Check, Info, ChevronRight, ShoppingBasket, X, CircleXIcon } from "lucide-react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Users, Snowflake, Check, Info, ChevronRight, X, Calendar, Clock, CreditCard, Eye, CheckCircle, Battery } from "lucide-react";
 import { useAppContext } from "../../context/ApplicationContext";
-import Cookies from 'js-cookie';
 import { toast } from "react-toastify";
+import { useTranslation } from "react-i18next";
 import dayjs from 'dayjs';
 
 function AllReservations() {
-
   const { reservations, vehicles, users } = useAppContext();
+  const { t } = useTranslation();
   const [selectedReservation, setSelectedReservation] = useState(null);
-  
   const currReservation = reservations.find((res) => res.id === selectedReservation) || null;
 
   const confirmReservation = async () => {
     try {
-      const response = await fetch(`https://api.davidtesla.online/reservations/confirm-reservation/${selectedReservation}`, {
-        method: 'PUT',
-      });
-
-      if (!response.ok) {
-        throw new Error('Failed to confirm reservation');
-      }
-
-      toast.success('Reservation confirmed!', {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-      });
-
+      const response = await fetch(`https://tesla.movelink.org/reservations/confirm-reservation/${selectedReservation}`, { method: 'PUT' });
+      if (!response.ok) throw new Error('Failed');
+      toast.success(t('admin.reservationConfirmed'), { position: "top-right", autoClose: 5000 });
     } catch (error) {
-      toast.error('Failed while confirming reservation!', {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-      });
+      toast.error(t('admin.reservationConfirmFailed'), { position: "top-right", autoClose: 5000 });
     }
   };
 
+  const getStatusStyle = (status) => {
+    switch (status) {
+      case 'success': return 'bg-green-100 text-green-700';
+      case 'failed': return 'bg-red-100 text-red-700';
+      default: return 'bg-yellow-100 text-yellow-700';
+    }
+  };
+
+  const getVehicle = (id) => vehicles.find(v => v.id === id);
+  const getUser = (id) => users.find(u => u.id === id);
 
   return (
     <div>
-      <h1 className='text-2xl font-bold mb-4'>All reservations</h1>
-      <table className='w-full border'>
-        <thead className='w-full'>
-          <tr className='w-full bg-[#F7F7F7]'>
-            <th className='text-sm text-left p-3 border-r'>ID</th>
-            <th className='text-sm text-left p-3 border-r min-w-[140px]'>Korisnik</th>
-            <th className='text-sm text-left p-3 border-r min-w-[140px]'>Vozilo</th>
-            <th className='text-sm text-left p-3 border-r min-w-[140px]'>Trajanje</th>
-            <th className='text-sm text-left p-3 border-r min-w-[140px]'>Datum preuzimanja</th>
-            <th className='text-sm text-left p-3 border-r min-w-[140px]'>Datum vraćanja</th>
-            <th className='text-sm text-left p-3 border-r min-w-[140px]'>Iznos</th>
-            <th className='text-sm text-left p-3 border-r min-w-[140px]'>Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          {
-            reservations.map((res) => {
-              return (
-                <tr onClick={() => setSelectedReservation(res.id)} className='w-full border-b hover:bg-[#F7F7F7] cursor-pointer'>
-                  <td className='text-sm text-left p-3 border-r font-bold'>{res.id}</td>
-                  <td className='text-sm text-left p-3 border-r'>{users.filter((user) => user.id === res.user_id).map((user) => user.full_name)}</td>
-                  <td className='text-sm text-left p-3 border-r'>{vehicles.filter((vehicle) => vehicle.id === res.vehicle_id).map((vehicle) => vehicle.vehicle_name)}</td>
-                  <td className='text-sm text-left p-3 border-r'>{res.duration} dana</td>
-                  <td className='text-sm text-left p-3 border-r'>{dayjs(res.start_time).format("DD.MM.YYYY - HH:mm")}</td>
-                  <td className='text-sm text-left p-3 border-r'>{dayjs(res.end_time).format("DD.MM.YYYY - HH:mm")}</td>
-                  <td className='text-sm text-left p-3 border-r'><strong>{res.price}</strong> din</td>
-                  <td className='text-sm text-left p-3 border-r'>
-                    <span className={`w-full py-1 px-3 rounded-full text-xs ${res.status === 'success' ? 'bg-green-400' : res.status === 'failed' ? 'bg-red-500 text-white' : 'bg-yellow-300'}`}>{res.status}</span>
-                    {
-                      res.reservation_image && res.status !== "success" && (
-                        <span className={`w-full py-1 px-2 ml-2 rounded-full text-xs bg-gray-100`}>{res.reservation_image && res.status !== "success" ? 'Waiting for confirmation' : null}</span>
-                      )
-                    }
+      <div className="mb-6">
+        <h1 className="text-2xl font-semibold text-gray-900">{t('admin.allReservations')}</h1>
+        <p className="text-sm text-gray-500 mt-1">{t('admin.allReservationsSubtitle')}</p>
+      </div>
+
+      {/* Stats Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+        {[
+          { label: t('admin.total'), value: reservations.length, color: 'bg-gray-900' },
+          { label: t('admin.pending'), value: reservations.filter(r => r.status === 'pending').length, color: 'bg-yellow-500' },
+          { label: t('admin.confirmed'), value: reservations.filter(r => r.status === 'success').length, color: 'bg-green-500' },
+          { label: t('admin.cancelled'), value: reservations.filter(r => r.status === 'failed').length, color: 'bg-red-500' },
+        ].map((stat, idx) => (
+          <div key={idx} className="bg-white rounded-xl p-5 border border-gray-200">
+            <div className="flex items-center gap-3">
+              <div className={`w-3 h-3 rounded-full ${stat.color}`}></div>
+              <span className="text-sm text-gray-500">{stat.label}</span>
+            </div>
+            <p className="text-3xl font-semibold text-gray-900 mt-2">{stat.value}</p>
+          </div>
+        ))}
+      </div>
+
+      {/* Table */}
+      <div className="bg-white rounded-xl border border-gray-200 overflow-hidden">
+        <div className="overflow-x-auto">
+          <table className="w-full">
+            <thead>
+              <tr className="bg-gray-50 border-b border-gray-200">
+                <th className="text-xs font-medium text-gray-500 uppercase tracking-wider text-left p-4">ID</th>
+                <th className="text-xs font-medium text-gray-500 uppercase tracking-wider text-left p-4">{t('admin.user')}</th>
+                <th className="text-xs font-medium text-gray-500 uppercase tracking-wider text-left p-4">{t('admin.vehicle')}</th>
+                <th className="text-xs font-medium text-gray-500 uppercase tracking-wider text-left p-4">{t('admin.duration')}</th>
+                <th className="text-xs font-medium text-gray-500 uppercase tracking-wider text-left p-4">{t('admin.pickup')}</th>
+                <th className="text-xs font-medium text-gray-500 uppercase tracking-wider text-left p-4">{t('admin.return')}</th>
+                <th className="text-xs font-medium text-gray-500 uppercase tracking-wider text-left p-4">{t('admin.amount')}</th>
+                <th className="text-xs font-medium text-gray-500 uppercase tracking-wider text-left p-4">{t('admin.status')}</th>
+                <th className="text-xs font-medium text-gray-500 uppercase tracking-wider text-left p-4"></th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-100">
+              {reservations.map((res) => (
+                <tr key={res.id} className="hover:bg-gray-50 transition-colors">
+                  <td className="p-4 text-sm font-medium text-gray-900">#{res.id}</td>
+                  <td className="p-4 text-sm text-gray-600">{getUser(res.user_id)?.full_name || '-'}</td>
+                  <td className="p-4 text-sm text-gray-600">{getVehicle(res.vehicle_id)?.vehicle_name || '-'}</td>
+                  <td className="p-4 text-sm text-gray-600">{res.duration} {t('admin.days')}</td>
+                  <td className="p-4 text-sm text-gray-600">{dayjs(res.start_time).format("DD.MM.YYYY HH:mm")}</td>
+                  <td className="p-4 text-sm text-gray-600">{dayjs(res.end_time).format("DD.MM.YYYY HH:mm")}</td>
+                  <td className="p-4 text-sm font-medium text-gray-900">{res.price?.toLocaleString()} din</td>
+                  <td className="p-4">
+                    <div className="flex items-center gap-2">
+                      <span className={`px-2.5 py-1 rounded-full text-xs font-medium ${getStatusStyle(res.status)}`}>
+                        {res.status}
+                      </span>
+                      {res.reservation_image && res.status !== 'success' && (
+                        <span className="px-2 py-1 rounded-full text-xs bg-blue-100 text-blue-700">{t('admin.awaitingConfirm')}</span>
+                      )}
+                    </div>
+                  </td>
+                  <td className="p-4">
+                    <button onClick={() => setSelectedReservation(res.id)} className="p-2 hover:bg-gray-100 rounded-lg transition-colors">
+                      <Eye size={18} className="text-gray-500" />
+                    </button>
                   </td>
                 </tr>
-              )
-            })
-          }
-        </tbody>
-      </table>
-      {
-        currReservation && (
-          <div className="">
-            <div className="selected-reservation-details bg-[#F7F7F7] py-8 rounded-lg mt-4 overflow-hidden relative">
-              <button onClick={() => setSelectedReservation(null)} className="top-3 right-3 absolute p-3 rounded-full bg-white"><CircleXIcon /></button>
-              <h1 className="px-8 text-4xl font-bold mb-6">Reservation ID: {currReservation.id}</h1>
-              {
-                vehicles.filter((vehicle) => vehicle.id === currReservation.vehicle_id).map((vehicle) => {
-                  return (
-                    <div key={vehicle.id} className={`car-card border-b mx-8 border-b-[#f7f7f7] ${currReservation.vehicle_id !== null && (currReservation.vehicle_id !== vehicle.id ? 'opacity-50' : null)}`}>
-                      <div className="car-main-details flex flex-col md:flex-row gap-4">
-                        <img src={vehicle.banner_image} className="w-full md:w-[320px]" alt="" />
-                        <div className="car-infos flex-1 text-black flex flex-col md:flex-row items-center justify-between">
-                          <div className="w-full md:w-auto">
-                            <h1 className="text-3xl font-semibold">{vehicle.vehicle_name}</h1>
-                            <div className="flex gap-4 mt-4">
-                              <span className="flex items-center gap-2 text-xs py-2 px-4 bg-[#f7f7f7] rounded-full w-auto"><Users size={14} /> 5</span>
-                              <span className="flex items-center gap-2 text-xs py-2 px-4 bg-[#f7f7f7] rounded-full w-auto">{vehicle.range_km} km</span>
-                              <span className="flex items-center gap-2 text-xs py-2 px-4 bg-[#f7f7f7] rounded-full w-auto"><Snowflake size={14} /> A/C</span>
-                            </div>
-                            <div className="flex flex-col gap-2 mt-4">
-                              <span className="flex items-center gap-2 text-sm"><Check size={16} color={`#68e048`} /> Unlimited mileage</span>
-                              <span className="flex items-center gap-2 text-sm"><Info size={16} color={`rgba(0,0,0,0.5)`} /> 21 years required</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      {/* Detail Modal */}
+      {currReservation && (
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+          <div className="bg-white rounded-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto">
+            {/* Modal Header */}
+            <div className="sticky top-0 bg-white border-b border-gray-200 p-6 flex items-center justify-between">
+              <div>
+                <h2 className="text-xl font-semibold text-gray-900">{t('admin.reservationDetails')}</h2>
+                <p className="text-sm text-gray-500">ID: #{currReservation.id}</p>
+              </div>
+              <button onClick={() => setSelectedReservation(null)} className="p-2 hover:bg-gray-100 rounded-lg">
+                <X size={20} />
+              </button>
+            </div>
+
+            {/* Modal Content */}
+            <div className="p-6 space-y-6">
+              {/* Vehicle Info */}
+              {vehicles.filter(v => v.id === currReservation.vehicle_id).map(vehicle => (
+                <div key={vehicle.id} className="flex flex-col md:flex-row gap-6 p-4 bg-gray-50 rounded-xl">
+                  <img src={vehicle.banner_image} alt={vehicle.vehicle_name} className="w-full md:w-48 h-32 object-contain bg-white rounded-lg" />
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-gray-900">{vehicle.vehicle_name}</h3>
+                    <div className="flex flex-wrap gap-2 mt-3">
+                      <span className="px-3 py-1.5 bg-white rounded-full text-xs font-medium text-gray-600 flex items-center gap-1.5">
+                        <Users size={12} /> 5 seats
+                      </span>
+                      <span className="px-3 py-1.5 bg-white rounded-full text-xs font-medium text-gray-600 flex items-center gap-1.5">
+                        <Battery size={12} /> {vehicle.range_km} km
+                      </span>
+                      <span className="px-3 py-1.5 bg-white rounded-full text-xs font-medium text-gray-600 flex items-center gap-1.5">
+                        <Snowflake size={12} /> A/C
+                      </span>
                     </div>
-                  )
-                })
-              }
-              <div className="duration grid px-8 grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mt-6">
-                <h3 className="py-4 text-center border-b font-medium text-sm bg-white">{currReservation.start_time}</h3>
-                <span className="py-0 md:py-4 text-center text-sm block mx-auto rotate-90 sm:rotate-0"><ChevronRight /></span>
-                <h3 className="py-4 text-center border-b font-medium text-sm bg-white">{currReservation.end_time}</h3>
+                  </div>
+                </div>
+              ))}
+
+              {/* Date Range */}
+              <div className="grid grid-cols-3 gap-4 items-center">
+                <div className="bg-gray-50 rounded-xl p-4 text-center">
+                  <Calendar size={18} className="mx-auto text-gray-400 mb-2" />
+                  <p className="text-xs text-gray-500 mb-1">{t('admin.pickup')}</p>
+                  <p className="text-sm font-medium text-gray-900">{dayjs(currReservation.start_time).format("DD.MM.YYYY")}</p>
+                  <p className="text-xs text-gray-500">{dayjs(currReservation.start_time).format("HH:mm")}</p>
+                </div>
+                <div className="flex justify-center">
+                  <ChevronRight size={24} className="text-gray-300" />
+                </div>
+                <div className="bg-gray-50 rounded-xl p-4 text-center">
+                  <Calendar size={18} className="mx-auto text-gray-400 mb-2" />
+                  <p className="text-xs text-gray-500 mb-1">{t('admin.return')}</p>
+                  <p className="text-sm font-medium text-gray-900">{dayjs(currReservation.end_time).format("DD.MM.YYYY")}</p>
+                  <p className="text-xs text-gray-500">{dayjs(currReservation.end_time).format("HH:mm")}</p>
+                </div>
               </div>
-              <div className="p-4 bg-white mx-8 mt-8 flex flex-col items-end rounded">
-                <h1 className="mb-4 w-full text-right border-b pb-4">Price without discount: <strong>{currReservation.duration * vehicles.filter((vehicle) => vehicle.id === currReservation.vehicle_id).map((vehicle) => vehicle.price_per_day).toLocaleString(void 0, { maximumFractionDigits: 2 })} din</strong></h1>
-                <h1 className="mb-4 w-full text-right border-b pb-4">Discount: <strong>0 din</strong></h1>
-                <h1 className="w-full text-right">Total price: <strong>{currReservation.duration * vehicles.filter((vehicle) => vehicle.id === currReservation.vehicle_id).map((vehicle) => vehicle.price_per_day).toLocaleString(void 0, { maximumFractionDigits: 2 })} din</strong></h1>
-                {
-                  currReservation.reservation_image && (
-                    <img src={`https://api.davidtesla.online${currReservation.reservation_image}`} className="mt-4" alt="" />
-                  )
-                }
-                {
-                  currReservation.reservation_image && currReservation.status !== "success" && (
-                    <button onClick={confirmReservation} className="w-full mt-4 py-2 px-4 bg-[#59c23d] text-white rounded">Confirm reservation</button>
-                  )
-                }
+
+              {/* Price Summary */}
+              <div className="bg-gray-50 rounded-xl p-4 space-y-3">
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-500">{t('admin.duration')}</span>
+                  <span className="text-gray-900">{currReservation.duration} {t('admin.days')}</span>
+                </div>
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-500">{t('admin.discount')}</span>
+                  <span className="text-gray-900">0 din</span>
+                </div>
+                <div className="border-t border-gray-200 pt-3 flex justify-between">
+                  <span className="font-medium text-gray-900">{t('admin.total')}</span>
+                  <span className="text-xl font-semibold text-gray-900">{currReservation.price?.toLocaleString()} din</span>
+                </div>
               </div>
+
+              {/* Payment Slip */}
+              {currReservation.reservation_image && (
+                <div>
+                  <p className="text-sm font-medium text-gray-700 mb-2">{t('admin.paymentSlip')}</p>
+                  <img src={`https://tesla.movelink.org${currReservation.reservation_image}`} alt="Payment slip" className="rounded-xl border border-gray-200 max-h-64 object-contain" />
+                </div>
+              )}
+
+              {/* Confirm Button */}
+              {currReservation.reservation_image && currReservation.status !== 'success' && (
+                <button onClick={confirmReservation} className="w-full py-3 bg-gray-900 hover:bg-black text-white font-medium rounded-xl flex items-center justify-center gap-2 transition-colors">
+                  <CheckCircle size={18} />
+                  {t('admin.confirmReservation')}
+                </button>
+              )}
             </div>
           </div>
-        )
-      }
+        </div>
+      )}
     </div>
-  )
+  );
 }
 
-export default AllReservations
+export default AllReservations;

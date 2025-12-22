@@ -1,132 +1,415 @@
 {
   "header": {
     "vehicles": "Vozila",
-    "reservations": "Moje rezervacije",
-    "blog": "Blog",
-    "aboutUs": "O nama",
+    "reservations": "Rezervacije",
+    "howItWorks": "Kako funkcioniše",
+    "faq": "FAQ",
     "contact": "Kontakt"
   },
   "hero": {
-    "title": "TESLA RENT A CAR",
-    "description": "Uživajte u luksuzu i inovaciji električne vožnje. Otkrijte vrhunski doživljaj vožnje uz Tesla vozila – spoj tehnologije, udobnosti i ekološke odgovornosti. Iznajmite svoju Teslu sada i uživajte u savršenim performansama i modernom dizajnu.",
-    "button": "Iznajmite Teslu sada"
+    "welcome": "Dobrodošli u Tesla Rent",
+    "title": "Vaš dnevni",
+    "titleHighlight": "Tesla najam",
+    "insuranceLabel": "Osiguranje:",
+    "insuranceValue": "Uključeno",
+    "depositLabel": "Bez depozita:",
+    "depositValue": "Da",
+    "priceFrom": "Cena od:",
+    "perDay": "/dan",
+    "unlimitedMileage": "Neograničena km",
+    "minAge": "21+ godina",
+    "bookNow": "Rezerviši"
   },
-  "cars": {
-    "model3": {
-      "title": "Tesla Model 3",
-      "description": "Tesla Model 3 – Spoj performansi i efikasnosti. Brzina, inovacija i vrhunski dizajn u jednom vozilu. Uživajte u izuzetnoj vožnji s električnim pogonom, dugom autonomijom i naprednim tehnologijama koje čine svaki trenutak nezaboravnim.",
-      "button": "Iznajmite Model 3 sada"
+  "rental": {
+    "subtitle": "Tesla Rent A Car",
+    "title": "Dnevni najam, bolje rešenje",
+    "featureTitle": "Električna vožnja",
+    "featureDesc": "uz Tesla najam, od samo",
+    "perDay": "dnevno",
+    "benefits": {
+      "insurance": "Osiguranje",
+      "registration": "Registracija",
+      "maintenance": "Održavanje",
+      "flexible": "Fleksibilnost",
+      "delivery": "Dostava",
+      "support": "24/7 pomoć",
+      "replacement": "Zamena"
     },
-    "modelS": {
-      "title": "Tesla Model S",
-      "description": "Tesla Model S – Elegancija i snaga u savršenom balansu. Uživajte u vrhunskim performansama, luksuznom dizajnu i najnovijoj tehnologiji. S dugim dometom, brzim punjenjem i inovativnim funkcijama, Model S redefiniše iskustvo vožnje, pružajući neprevaziđenu udobnost i sigurnost.",
-      "button": "Iznajmite Model S sada"
+    "learnMore": "Više"
+  },
+  "model3": {
+    "title": "2024 Tesla Model 3",
+    "description": "Tesla Model 3 najam, od samo",
+    "perDay": "dnevno",
+    "whyChoose": "Zašto Model 3?",
+    "features": {
+      "ownership": { "title": "Bez briga", "desc": "Bez troškova vlasništva." },
+      "technology": {
+        "title": "Tehnologija",
+        "desc": "Autopilot i sigurnost."
+      },
+      "eco": { "title": "Ekološki", "desc": "Nula emisija." },
+      "performance": { "title": "Performanse", "desc": "0-100 za 6.1s." }
     }
   },
-  "steps": {
-    "step1": "Izaberite Tesla model koji odgovara vašim potrebama.",
-    "step2": "Proverite dostupne datume i rezervišite Teslu.",
-    "step3": "Uživajte u vožnji uz 24/7 podršku."
+  "included": {
+    "title": "Šta je uključeno?",
+    "insurance": { "title": "Osiguranje", "desc": "Zaštita." },
+    "maintenance": { "title": "Održavanje", "desc": "Uključeno." },
+    "support": { "title": "24/7 pomoć", "desc": "365 dana." },
+    "flexibility": { "title": "Fleksibilnost", "desc": "Bez penala." }
   },
-  "whyTesla": {
-    "title": "Zašto Tesla Rent a Car",
-    "description": "Prilagodite svoje putovanje svom rasporedu i uživajte u potpunoj fleksibilnosti tokom vožnje, istovremeno doživljavajući jedinstveno iskustvo vožnje električnog automobila.",
-    "button": "Rezervišite Teslu"
-  },
-  "makeReservationHeader": {
-    "title": "Da biste napravili rezervaciju, morate biti registrovani u našem sistemu",
-    "button": "Registrujte se sada"
-  },
-  "reservationFormHeader": {
-    "pickUp": "Datum i vreme preuzimanja",
-    "returnAt": "Datum i vreme vraćanja",
-    "button": "Rezerviši sada"
-  },
-  "reserveCarForm": {
-    "mileageSubtitle": "Neograničena kilometraža",
-    "requiredYears": "Potrebno 21 godina",
-    "payAtDesk": "Plaćanje na licu mesta",
-    "from": "od",
-    "day": "dan",
-    "total": "UKUPNO",
-    "selectCar": "IZABERI VOZILO",
-    "selectedCar": "IZABRANO VOZILO",
-    "notAvailableCar": "NIJE DOSTUPNO"
-  },
-  "yourReservation": {
-    "title": "Vaša rezervacija",
-    "priceWithoutDiscount": "Cena bez popusta",
-    "discount": "Popust",
-    "totalPrice": "Ukupna cena",
-    "button": "Plaćanje sada"
-  },
-  "confirmReservation": {
-    "title": "Potvrdite vašu rezervaciju",
-    "subtitle": "Unesite ID Vaše rezervacije, odaberite sliku svoje uplatnice i potvrdite rezervaciju. Potrebno je uplatiti depozit putem uplatnice ili lično",
-    "reservationId": "ID rezervacije",
-    "placeholderReservationId": "Unesite ID rezervacije",
-    "paymentSlip": "Uplatnica",
-    "selectImage": "Izaberite sliku",
-    "paymentSlipRequirements": {
-      "title": "Zahtevi za uplatnicu",
-      "one": "1. Naslov: Uplata za rezervaciju sa ID-jem: #####",
-      "two": "2. Primalac: TESLA CAR RENT-A-CAR",
-      "three": "3. Račun primaoca: 160-6000001746148-90"
+  "comparison": {
+    "subtitle": "Poređenje",
+    "title": "Zašto Tesla Rent?",
+    "features": {
+      "noDeposit": "Bez depozita",
+      "noHiddenFees": "Bez troškova",
+      "registrationIncluded": "Registracija",
+      "maintenanceIncluded": "Održavanje",
+      "insuranceIncluded": "Osiguranje",
+      "chargerIncluded": "Punjač",
+      "flexibleDates": "Fleksibilno"
     },
-    "confirm": "Potvrdi rezervaciju",
-    "confirmingRes": "Potvrđivanjem rezervacije prihvatate naše uslove korišćenja."
+    "teslaRent": "Tesla Rent",
+    "traditional": "Tradicionalno",
+    "buying": "Kupovina"
   },
-  "authForm": {
-    "register": "Registracija",
-    "login": "Prijava",
-    "enterEmail": "Unesite email",
-    "enterPassword": "Unesite lozinku",
-    "signIn": "Prijavite se",
-    "signUp": "Registrujte se",
-    "dontHaveAccount": "Nemate nalog?",
-    "alreadyHaveAccount": "Već imate nalog?",
-    "enterFullName": "Unesite puno ime",
-    "enterPhone": "Unesite broj telefona"
+  "howItWorks": {
+    "subtitle": "Proces",
+    "title": "Kako funkcioniše",
+    "viewAll": "Sva vozila",
+    "chooseYourPlan": "Odaberite plan",
+    "steps": {
+      "step1": { "number": "01", "title": "Odaberite", "desc": "Model." },
+      "step2": {
+        "number": "02",
+        "title": "Rezervišite",
+        "desc": "Forma i datum."
+      },
+      "step3": { "number": "03", "title": "Vozite", "desc": "Uživajte." }
+    }
   },
-  "advancePayment": {
-    "title": "Uplata depozita",
-    "buttonOne": "Uplatnica za depozit",
-    "buttonTwo": "Plaćanje depozita uživo"
+  "faq": {
+    "title": "FAQ",
+    "q1": "Dokumenti?",
+    "a1": "Vozačka, lična, kartica.",
+    "q2": "Osiguranje?",
+    "a2": "Da, uključeno.",
+    "q3": "Produženje?",
+    "a3": "Da, bilo kad.",
+    "q4": "Kilometri?",
+    "a4": "Neograničeno.",
+    "q5": "Preuzimanje?",
+    "a5": "Beograd ili dostava."
   },
-  "footer": {
-    "titleOne": "Stojimo Vam Na Raspolaganju:",
-    "infoOne": "Adresa: Vojvode Vratka 10a, 11000 Beograd",
-    "infoTwo": "Delatnost i Šifra Delatnosti: 7711 - Iznajmljivanje i lizing automobila i lakih motornih vozila",
-    "infoThree": "Matični Broj: 21929603",
-    "infoFour": "Poreski Broj: 113813797",
-    "infoFive": "Web Adresa: https://teslarent.rs",
-    "infoSix": "Telefon: +381 66 12 12 00",
-    "infoSeven": "E-Mail: info@teslarent.rs",
-    "titleTwo": "Uslovi Korišćenja Usluga:",
-    "linkOne": "Uslovi Reklamacije, Plaćanja, Naknade, Povraćaja Novca",
-    "linkTwo": "Uslovi Plaćanja",
-    "linkThree": "Način Plaćanja",
-    "linkFour": "Opšti Uslovi",
-    "linkFive": "Pravo na odustajanje",
-    "linkSix": "Zaštita podataka o transakciji"
+  "testDrive": {
+    "subtitle": "Test vožnja",
+    "title": "Probajte Tesla",
+    "button": "Rezerviši"
+  },
+  "testimonials": {
+    "title": "Mišljenja",
+    "items": {
+      "t1": {
+        "name": "Marko Petrović",
+        "role": "Direktor",
+        "text": "Odlično!"
+      },
+      "t2": {
+        "name": "Ana Jovanović",
+        "role": "Preduzetnica",
+        "text": "Zadovoljna."
+      },
+      "t3": { "name": "Stefan Nikolić", "role": "IT", "text": "Preporučujem!" },
+      "t4": { "name": "Jelena Đorđević", "role": "Lekar", "text": "Budućnost." }
+    }
+  },
+  "contact": {
+    "subtitle": "Kontakt",
+    "title": "Kontaktirajte",
+    "formIntro": "Forma:",
+    "firstName": "Ime",
+    "lastName": "Prezime",
+    "email": "Email",
+    "message": "Poruka",
+    "submit": "Pošalji"
+  },
+  "newsletter": {
+    "title": "Newsletter",
+    "placeholder": "Email",
+    "button": "Prijavi se"
   },
   "dataProtection": {
-    "title": "Евиденција лица за заштиту података",
-    "serialNumber": "Редни број",
-    "controllerName": "Име и презиме/назив руковаоца, односно обрађивача",
-    "controllerAddress": "Адреса/седиште руковаоца, односно обрађивача",
-    "dpoName": "Име и презиме лица за заштиту података",
-    "dpoAddress": "Адреса лица за заштиту података",
-    "dpoEmail": "Имејл лица за заштиту података",
-    "dpoPhone": "Број телефона лица за заштиту података",
+    "title": "Zaštita",
+    "serialNumber": "Br.",
+    "controllerName": "Rukovalac",
+    "controllerAddress": "Adresa",
+    "dpoName": "DPO",
+    "dpoAddress": "DPO adresa",
+    "dpoEmail": "DPO email",
+    "dpoPhone": "DPO tel",
     "data": {
       "serialNumber": "1.",
       "controllerName": "Tesla rent a car",
       "controllerAddress": "Vojvode Vrtaka br.10a",
       "dpoName": "Nikola Knežević",
-      "dpoAddress": "Djordja Rajkovića 019a/2/27 Novi Sad",
+      "dpoAddress": "Djordja Rajkovića 019a/2/27",
       "dpoEmail": "rent.a.tesla.car@gmail.com",
       "dpoPhone": "064/2105790"
     }
-  }
+  },
+  "footer": {
+    "description": "Vaš partner.",
+    "quickLinks": "Linkovi",
+    "vehicles": "Vozila",
+    "howItWorks": "Proces",
+    "faqLink": "FAQ",
+    "login": "Prijava",
+    "information": "Info",
+    "linkOne": "Reklamacije",
+    "linkTwo": "Plaćanje",
+    "linkThree": "Načini",
+    "linkFour": "Uslovi",
+    "linkFive": "Odustajanje",
+    "linkSix": "Zaštita",
+    "contactTitle": "Kontakt",
+    "address": "Vojvode Vratka 10a, Beograd",
+    "phone": "+381 66 12 12 00",
+    "email": "info@teslarent.rs",
+    "copyright": "© 2025 Tesla Rent",
+    "madeBy": "Napravio:"
+  },
+  "vehicles": {
+    "pageTitle": "Odaberite Tesla",
+    "pageSubtitle": "Datumi i vozilo",
+    "availableVehicles": "Dostupna",
+    "authNotice": {
+      "title": "Registrujte se",
+      "subtitle": "Kreirajte nalog",
+      "button": "Registracija"
+    },
+    "reservationForm": {
+      "title": "Datumi",
+      "subtitle": "Preuzimanje/vraćanje",
+      "pickupDate": "Preuzimanje",
+      "returnDate": "Vraćanje",
+      "selectDate": "Izaberi",
+      "button": "Nastavi",
+      "duration": "Trajanje",
+      "day": "dan",
+      "days": "dana"
+    },
+    "tags": { "seats": "sedišta" },
+    "features": {
+      "unlimitedMileage": "Neograničeno",
+      "insurance": "Osiguranje",
+      "minAge": "21 god"
+    },
+    "price": { "payAtDesk": "Na licu mesta", "day": "dan", "total": "Ukupno" },
+    "buttons": {
+      "select": "Izaberi",
+      "selected": "Izabrano",
+      "notAvailable": "Nedostupno"
+    },
+    "checkout": {
+      "title": "Rezervacija",
+      "subtitle": "Pregled",
+      "pickup": "Preuzimanje",
+      "return": "Vraćanje",
+      "pricePerDay": "Cena/dan",
+      "duration": "Trajanje",
+      "discount": "Popust",
+      "total": "Ukupno",
+      "back": "Nazad",
+      "confirm": "Potvrdi"
+    }
+  },
+  "auth": {
+    "signIn": "Prijava",
+    "signInSubtitle": "Pristupite nalogu",
+    "createAccount": "Kreiraj",
+    "createAccountSubtitle": "Postanite član",
+    "fullName": "Ime",
+    "fullNamePlaceholder": "Unesite ime",
+    "email": "Email",
+    "emailPlaceholder": "primer@email.com",
+    "phone": "Telefon",
+    "phonePlaceholder": "+381 XX XXX",
+    "password": "Lozinka",
+    "passwordPlaceholder": "Lozinka",
+    "forgotPassword": "Zaboravili?",
+    "signInButton": "Prijavi se",
+    "createAccountButton": "Kreiraj",
+    "loading": "Sačekajte...",
+    "or": "ILI",
+    "terms": "Slažete se sa",
+    "termsLink": "Uslovima",
+    "and": "i",
+    "privacyLink": "Privatnošću",
+    "footerTerms": "Uslovi",
+    "footerPrivacy": "Privatnost"
+  },
+  "confirm": {
+    "title": "Potvrdi",
+    "subtitle": "Upload uplatnice",
+    "reservationId": "ID",
+    "reservationIdPlaceholder": "Unesite ID",
+    "paymentSlip": "Uplatnica",
+    "uploadText": "Uploadujte",
+    "uploadHint": "PNG, JPG 10MB",
+    "uploadDeposit": "Depozit",
+    "clickToChange": "Promeni",
+    "paymentMethod": "Način",
+    "payInPerson": "Uživo",
+    "payInPersonDesc": "U kancelariji",
+    "payBySlip": "Transfer",
+    "payBySlipDesc": "Uplatnica",
+    "depositSlip": "Depozit",
+    "requirements": {
+      "title": "Zahtevi",
+      "one": "Svrha: ID #####",
+      "two": "Primalac: TESLA CAR",
+      "three": "Račun: 160-6000001746148-90"
+    },
+    "termsNotice": "Slažete se sa uslovima.",
+    "confirmButton": "Potvrdi",
+    "processing": "Obrada...",
+    "success": "Potvrđeno!",
+    "errorMissing": "Popunite polja",
+    "errorFailed": "Greška"
+  },
+  "dashboard": {
+    "welcome": "Dobrodošli",
+    "welcomeSubtitle": "Upravljajte rezervacijama",
+    "navigation": "Navigacija",
+    "myReservations": "Moje",
+    "allReservations": "Sve",
+    "allVehicles": "Vozila",
+    "users": "Korisnici",
+    "settings": "Podešavanja",
+    "signOut": "Odjava",
+    "backToSite": "Na sajt"
+  },
+  "admin": {
+    "allReservations": "Sve rezervacije",
+    "allReservationsSubtitle": "Upravljanje",
+    "total": "Ukupno",
+    "pending": "Na čekanju",
+    "confirmed": "Potvrđeno",
+    "cancelled": "Otkazano",
+    "user": "Korisnik",
+    "vehicle": "Vozilo",
+    "duration": "Trajanje",
+    "pickup": "Preuzimanje",
+    "return": "Vraćanje",
+    "amount": "Iznos",
+    "status": "Status",
+    "days": "dana",
+    "awaitingConfirm": "Čeka",
+    "reservationDetails": "Detalji",
+    "discount": "Popust",
+    "paymentSlip": "Uplatnica",
+    "confirmReservation": "Potvrdi",
+    "reservationConfirmed": "Potvrđeno!",
+    "reservationConfirmFailed": "Greška",
+    "allVehicles": "Vozila",
+    "allVehiclesSubtitle": "Flota",
+    "addVehicle": "Dodaj",
+    "day": "dan",
+    "edit": "Uredi",
+    "editVehicle": "Uredi",
+    "vehicleName": "Naziv",
+    "pricePerDay": "Cena/dan",
+    "teslaCode": "Kod",
+    "batteryCapacity": "Baterija",
+    "range": "Domet",
+    "acceleration": "Ubrzanje",
+    "topSpeed": "Brzina",
+    "description": "Opis",
+    "uploadImage": "Upload",
+    "changeImage": "Promeni",
+    "cancel": "Otkaži",
+    "saveChanges": "Sačuvaj",
+    "createVehicle": "Kreiraj",
+    "vehicleCreated": "Kreirano!",
+    "vehicleCreateFailed": "Greška"
+  },
+  "myReservations": {
+    "title": "Moje rezervacije",
+    "subtitle": "Pregled",
+    "totalBookings": "Ukupno",
+    "activeBookings": "Aktivno",
+    "pendingBookings": "Čeka",
+    "noReservations": "Nema",
+    "noReservationsDesc": "Pregledaj vozila",
+    "browseVehicles": "Vozila",
+    "vehicle": "Vozilo",
+    "duration": "Trajanje",
+    "pickup": "Preuzimanje",
+    "return": "Vraćanje",
+    "amount": "Iznos",
+    "status": "Status",
+    "days": "dana",
+    "reservationDetails": "Detalji",
+    "seats": "sedišta",
+    "unlimitedMileage": "Neograničeno",
+    "minAge": "21 god",
+    "priceWithoutDiscount": "Cena",
+    "discount": "Popust",
+    "totalPrice": "Ukupno",
+    "paymentSlip": "Uplatnica",
+    "confirmNow": "Potvrdi"
+  },
+  "carControl": {
+    "currentVehicle": "Trenutno vozilo",
+    "range": "Domet",
+    "charged": "napunjeno",
+    "interior": "Unutrašnjost",
+    "climateOff": "Klima isključena",
+    "quickActions": "Brze akcije",
+    "wakeUp": "Probudi",
+    "lockCar": "Zaključaj",
+    "vehicleControls": "Vozilo",
+    "climate": "Klima",
+    "battery": "Baterija",
+    "selectSection": "Izaberite sekciju za kontrolu vozila",
+    "on": "Uključeno",
+    "off": "Isključeno",
+    "front": "Prednji",
+    "rear": "Zadnji",
+    "lock_doors": "Zaključaj vrata",
+    "unlock_doors": "Otključaj vrata",
+    "honk_horn": "Svirni",
+    "flash_lights": "Trepni svetlima",
+    "open_trunk": "Otvori gepek",
+    "start_vehicle": "Pokreni vozilo",
+    "fold_mirrors": "Sklopi retrovizore",
+    "enable_sentry_mode": "Stražar mod",
+    "start_climate": "Uključi klimu",
+    "temperature": "Temperatura",
+    "enable_defrost": "Odmrzavanje",
+    "seat_heater": "Grejanje sedišta",
+    "steering_heater": "Grejanje volana",
+    "start_charging": "Počni punjenje",
+    "stop_charging": "Zaustavi punjenje",
+    "charging_limit": "Limit punjenja",
+    "open_charge_port": "Otvori port"
+  },
+  "notFound": {
+    "title": "Nije pronađeno",
+    "description": "Stranica ne postoji.",
+    "goBack": "Nazad",
+    "goHome": "Početna",
+    "needHelp": "Pomoć?",
+    "browseVehicles": "Vozila"
+  },
+  "errors": {
+    "invalidReservation": "Izaberi vozilo",
+    "notAllowed": "Prijavi se",
+    "missingData": "Nedostaju podaci",
+    "carNotFound": "Nije pronađeno",
+    "reservationFailed": "Greška"
+  },
+  "success": { "reservationCreated": "Kreirano!" }
 }

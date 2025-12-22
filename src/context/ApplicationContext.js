@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import Cookies from 'js-cookie';
+import axios from 'axios';
 
 // Create the context
 const AppContext = createContext();
@@ -19,9 +20,8 @@ export function AppProvider({ children }) {
     // Fetch vehicles from the API
     async function fetchVehicles() {
         try {
-            const response = await fetch('https://api.davidtesla.online/vehicles');
-            const data = await response.json();
-            setVehicles(data);
+            const response = await axios.get('https://tesla.movelink.org/vehicles');
+            setVehicles(response.data);
         } catch (err) {
             console.error('Error fetching vehicles:', err);
             setVehicles([]);
@@ -30,7 +30,7 @@ export function AppProvider({ children }) {
 
     async function fetchReservations() {
         try {
-            const response = await fetch('https://api.davidtesla.online/reservations');
+            const response = await fetch('https://tesla.movelink.org/reservations');
             const data = await response.json();
             setReservations(data);
         } catch (err) {
@@ -41,7 +41,7 @@ export function AppProvider({ children }) {
 
     async function fetchUser() {
         try {
-            const response = await fetch(`https://api.davidtesla.online/users/${userId}`);
+            const response = await fetch(`https://tesla.movelink.org/users/${userId}`);
             const data = await response.json();
             setUser(data);
         } catch (err) {
@@ -52,7 +52,7 @@ export function AppProvider({ children }) {
 
     async function fetchUsers() {
         try {
-            const response = await fetch(`https://api.davidtesla.online/users`);
+            const response = await fetch(`https://tesla.movelink.org/users`);
             const data = await response.json();
             setUsers(data);
         } catch (err) {

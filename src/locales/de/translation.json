@@ -2,131 +2,425 @@
   "header": {
     "vehicles": "Fahrzeuge",
     "reservations": "Meine Reservierungen",
-    "blog": "Blog",
-    "aboutUs": "Über uns",
+    "howItWorks": "So funktioniert's",
+    "faq": "FAQ",
     "contact": "Kontakt"
   },
   "hero": {
-    "title": "TESLA MIETWAGEN",
-    "description": "Erleben Sie den Luxus und die Innovation des elektrischen Fahrens. Entdecken Sie das ultimative Fahrerlebnis mit Tesla-Fahrzeugen – eine Mischung aus Technologie, Komfort und Umweltbewusstsein. Mieten Sie jetzt Ihren Tesla und genießen Sie kompromisslose Leistung mit modernem Design.",
-    "button": "Mieten Sie jetzt Ihren Tesla"
+    "welcome": "Willkommen bei Tesla Rent",
+    "title": "Ihre tägliche",
+    "titleHighlight": "Tesla Miete",
+    "insuranceLabel": "Versicherung & Wartung:",
+    "insuranceValue": "Inklusive",
+    "depositLabel": "Keine Kaution:",
+    "depositValue": "Ja",
+    "priceFrom": "Preis ab:",
+    "perDay": "/Tag",
+    "unlimitedMileage": "Unbegrenzte Kilometer",
+    "minAge": "Mindestalter 21 Jahre",
+    "bookNow": "Jetzt Buchen"
   },
-  "cars": {
-    "model3": {
-      "title": "Tesla Model 3",
-      "description": "Tesla Model 3 – Eine Kombination aus Leistung und Effizienz. Geschwindigkeit, Innovation und Premium-Design in einem Fahrzeug. Genießen Sie ein außergewöhnliches elektrisches Fahrerlebnis mit großer Reichweite und fortschrittlichen Technologien, die jeden Moment unvergesslich machen.",
-      "button": "Mieten Sie jetzt Ihr Model 3"
+  "rental": {
+    "subtitle": "Tesla Rent A Car",
+    "title": "Tages- und Kurzzeitmiete, besser gemacht",
+    "featureTitle": "Erleben Sie elektrisches Fahren",
+    "featureDesc": "mit Tesla Miete, ab nur",
+    "perDay": "pro Tag",
+    "benefits": {
+      "insurance": "Vollkasko-Versicherung",
+      "registration": "Anmeldung inklusive",
+      "maintenance": "Wartung inklusive",
+      "flexible": "Flexible Mietzeiten",
+      "delivery": "Kostenlose Lieferung",
+      "support": "24/7 Pannenhilfe",
+      "replacement": "Ersatzfahrzeug"
     },
-    "modelS": {
-      "title": "Tesla Model S",
-      "description": "Tesla Model S – Eleganz und Kraft in perfekter Balance. Erleben Sie erstklassige Leistung, luxuriöses Design und modernste Technologie. Mit großer Reichweite, schnellem Laden und innovativen Funktionen definiert das Model S das Fahrerlebnis neu und bietet unvergleichlichen Komfort und Sicherheit.",
-      "button": "Mieten Sie jetzt Ihr Model S"
+    "learnMore": "Mehr Erfahren"
+  },
+  "model3": {
+    "title": "Brandneuer 2024 Tesla Model 3",
+    "description": "Erleben Sie Tesla Model 3 Miete, ab nur",
+    "perDay": "pro Tag",
+    "whyChoose": "Warum Tesla Model 3?",
+    "features": {
+      "ownership": {
+        "title": "Sorgenfreies Erlebnis",
+        "desc": "Tesla ohne Eigentumskosten."
+      },
+      "technology": {
+        "title": "Modernste Technologie",
+        "desc": "Autopilot und Sicherheit."
+      },
+      "eco": { "title": "Umweltfreundlich", "desc": "Null Emissionen." },
+      "performance": { "title": "Luxus & Leistung", "desc": "0-100 in 6,1s." }
     }
   },
-  "steps": {
-    "step1": "Wählen Sie das Tesla-Modell, das Ihren Bedürfnissen entspricht.",
-    "step2": "Prüfen Sie verfügbare Termine und buchen Sie Ihren Tesla.",
-    "step3": "Genießen Sie die Fahrt mit 24/7 Unterstützung."
+  "included": {
+    "title": "Was ist enthalten?",
+    "insurance": { "title": "Versicherung", "desc": "Vollständiger Schutz." },
+    "maintenance": { "title": "Wartung", "desc": "Alles inklusive." },
+    "support": { "title": "24/7 Pannenhilfe", "desc": "365 Tage." },
+    "flexibility": { "title": "Flexibilität", "desc": "Ohne Strafen." }
   },
-  "whyTesla": {
-    "title": "Warum Tesla Mietwagen",
-    "description": "Passen Sie Ihre Reise Ihrem Zeitplan an und genießen Sie volle Flexibilität während der Fahrt, während Sie den einzigartigen Nervenkitzel des Fahrens eines Elektroautos erleben.",
-    "button": "Reservieren Sie Ihren Tesla"
-  },
-  "makeReservationHeader": {
-    "title": "Um Reservierungen vorzunehmen, müssen Sie in unserem System registriert sein",
-    "button": "Jetzt registrieren"
-  },
-  "reservationFormHeader": {
-    "pickUp": "Abholdatum und -uhrzeit",
-    "returnAt": "Rückgabedatum und -uhrzeit",
-    "button": "Jetzt reservieren"
-  },
-  "reserveCarForm": {
-    "mileageSubtitle": "Unbegrenzte Kilometer",
-    "requiredYears": "21 Jahre erforderlich",
-    "payAtDesk": "Bezahlung vor Ort",
-    "from": "ab",
-    "day": "Tag",
-    "total": "GESAMT",
-    "selectCar": "FAHRZEUG WÄHLEN",
-    "selectedCar": "AUSGEWÄHLTES FAHRZEUG",
-    "notAvailableCar": "NICHT VERFÜGBAR"
-  },
-  "yourReservation": {
-    "title": "Ihre Reservierung",
-    "priceWithoutDiscount": "Preis ohne Rabatt",
-    "discount": "Rabatt",
-    "totalPrice": "Gesamtpreis",
-    "button": "Jetzt bezahlen"
-  },
-  "confirmReservation": {
-    "title": "Bestätigen Sie Ihre Reservierung",
-    "subtitle": "Geben Sie Ihre Reservierungs-ID ein, wählen Sie ein Bild Ihrer Gehaltsabrechnung aus und bestätigen Sie Ihre Reservierung. Es ist notwendig, eine Anzahlung per Einzahlungsschein oder persönlich zu leisten.",
-    "reservationId": "Reservierungs-ID",
-    "placeholderReservationId": "Geben Sie Ihre Reservierungs-ID ein",
-    "paymentSlip": "Zahlungsbeleg",
-    "selectImage": "Bild auswählen",
-    "paymentSlipRequirements": {
-      "title": "Anforderungen an den Zahlungsbeleg",
-      "one": "1. Betreff: Zahlung für Reservierung mit ID: #####",
-      "two": "2. Empfänger: TESLA CAR RENT-A-CAR",
-      "three": "3. Konto des Empfängers: 160-6000001746148-90"
+  "comparison": {
+    "subtitle": "Vergleich",
+    "title": "Warum Tesla Rent?",
+    "features": {
+      "noDeposit": "Keine Kaution",
+      "noHiddenFees": "Keine Gebühren",
+      "registrationIncluded": "Anmeldung inklusive",
+      "maintenanceIncluded": "Wartung inklusive",
+      "insuranceIncluded": "Versicherung inklusive",
+      "chargerIncluded": "Ladezugang inklusive",
+      "flexibleDates": "Flexible Daten"
     },
-    "confirm": "Reservierung bestätigen",
-    "confirmingRes": "Mit der Bestätigung Ihrer Reservierung stimmen Sie unseren Allgemeinen Geschäftsbedingungen zu."
+    "teslaRent": "Tesla Rent",
+    "traditional": "Traditionell",
+    "buying": "Kaufen"
   },
-  "authForm": {
-    "register": "Registrieren",
-    "login": "Anmelden",
-    "enterEmail": "E-Mail eingeben",
-    "enterPassword": "Passwort eingeben",
-    "signIn": "Einloggen",
-    "signUp": "Registrieren",
-    "dontHaveAccount": "Sie haben noch kein Konto?",
-    "alreadyHaveAccount": "Sie haben bereits ein Konto?",
-    "enterFullName": "Vollständigen Namen eingeben",
-    "enterPhone": "Telefonnummer eingeben"
+  "howItWorks": {
+    "subtitle": "Prozess",
+    "title": "So Funktioniert's",
+    "viewAll": "Alle Fahrzeuge",
+    "chooseYourPlan": "Plan wählen",
+    "steps": {
+      "step1": { "number": "01", "title": "Wählen", "desc": "Modell wählen." },
+      "step2": {
+        "number": "02",
+        "title": "Buchen",
+        "desc": "Formular und Datum."
+      },
+      "step3": {
+        "number": "03",
+        "title": "Fahren",
+        "desc": "Abholen und genießen."
+      }
+    }
   },
-  "advancePayment": {
-    "title": "Anzahlung",
-    "buttonOne": "Einzahlungsschein",
-    "buttonTwo": "Live-Einzahlungszahlung"
+  "faq": {
+    "title": "Häufige Fragen",
+    "q1": "Welche Dokumente?",
+    "a1": "Führerschein, Ausweis, Karte.",
+    "q2": "Versicherung?",
+    "a2": "Ja, inklusive.",
+    "q3": "Verlängern?",
+    "a3": "Ja, jederzeit.",
+    "q4": "Kilometer?",
+    "a4": "Unbegrenzt.",
+    "q5": "Abholen?",
+    "a5": "Belgrad oder Lieferung."
   },
-  "footer": {
-    "titleOne": "Wir Stehen Ihnen Zur Verfügung:",
-    "infoOne": "Adresse: Vojvode Vratka 10a, 11000 Belgrad",
-    "infoTwo": "Tätigkeit und Tätigkeitscode: 7711 - Vermietung und Leasing von Autos und leichten Nutzfahrzeugen",
-    "infoThree": "Unternehmens-ID: 21929603",
-    "infoFour": "Steuer-ID: 113813797",
-    "infoFive": "Webseite: https://teslarent.rs",
-    "infoSix": "Telefon: +381 66 12 12 00",
-    "infoSeven": "E-Mail: info@teslarent.rs",
-    "titleTwo": "Nutzungsbedingungen:",
-    "linkOne": "Bedingungen für Reklamationen, Zahlungen, Gebühren, Rückerstattungen",
-    "linkTwo": "Zahlungsbedingungen",
-    "linkThree": "Zahlungsmethoden",
-    "linkFour": "Allgemeine Geschäftsbedingungen",
-    "linkFive": "Widerrufsrecht",
-    "linkSix": "Schutz von Transaktionsdaten"
+  "testDrive": {
+    "subtitle": "Probefahrt",
+    "title": "Tesla testen",
+    "button": "Buchen"
+  },
+  "testimonials": {
+    "title": "Kundenmeinungen",
+    "items": {
+      "t1": {
+        "name": "Marko Petrović",
+        "role": "Direktor",
+        "text": "Ausgezeichnet!"
+      },
+      "t2": {
+        "name": "Ana Jovanović",
+        "role": "Unternehmerin",
+        "text": "Sehr zufrieden."
+      },
+      "t3": {
+        "name": "Stefan Nikolić",
+        "role": "IT-Manager",
+        "text": "Empfehlenswert!"
+      },
+      "t4": { "name": "Jelena Đorđević", "role": "Ärztin", "text": "Zukunft." }
+    }
+  },
+  "contact": {
+    "subtitle": "Kontakt",
+    "title": "Kontaktieren",
+    "formIntro": "Formular:",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "submit": "Senden"
+  },
+  "newsletter": {
+    "title": "Newsletter",
+    "placeholder": "E-Mail",
+    "button": "Abonnieren"
   },
   "dataProtection": {
-    "title": "Verzeichnis der Personen für den Datenschutz",
-    "serialNumber": "Laufende Nummer",
-    "controllerName": "Name und Nachname/Name des Verantwortlichen, d.h. Verarbeiters",
-    "controllerAddress": "Adresse/Sitz des Verantwortlichen, d.h. Verarbeiters",
-    "dpoName": "Name und Nachname des Datenschutzbeauftragten",
-    "dpoAddress": "Adresse des Datenschutzbeauftragten",
-    "dpoEmail": "E-Mail des Datenschutzbeauftragten",
-    "dpoPhone": "Telefonnummer des Datenschutzbeauftragten",
+    "title": "Datenschutz",
+    "serialNumber": "Nr.",
+    "controllerName": "Verantwortlicher",
+    "controllerAddress": "Adresse",
+    "dpoName": "DSB",
+    "dpoAddress": "DSB Adresse",
+    "dpoEmail": "DSB E-Mail",
+    "dpoPhone": "DSB Tel",
     "data": {
       "serialNumber": "1.",
       "controllerName": "Tesla rent a car",
       "controllerAddress": "Vojvode Vrtaka br.10a",
       "dpoName": "Nikola Knežević",
-      "dpoAddress": "Djordja Rajkovića 019a/2/27 Novi Sad",
+      "dpoAddress": "Djordja Rajkovića 019a/2/27",
       "dpoEmail": "rent.a.tesla.car@gmail.com",
       "dpoPhone": "064/2105790"
     }
-  }
+  },
+  "footer": {
+    "description": "Ihr Partner.",
+    "quickLinks": "Links",
+    "vehicles": "Fahrzeuge",
+    "howItWorks": "Prozess",
+    "faqLink": "FAQ",
+    "login": "Anmelden",
+    "information": "Info",
+    "linkOne": "Beschwerden",
+    "linkTwo": "Zahlung",
+    "linkThree": "Methoden",
+    "linkFour": "AGB",
+    "linkFive": "Widerruf",
+    "linkSix": "Schutz",
+    "contactTitle": "Kontakt",
+    "address": "Vojvode Vratka 10a, Belgrad",
+    "phone": "+381 66 12 12 00",
+    "email": "info@teslarent.rs",
+    "copyright": "© 2025 Tesla Rent",
+    "madeBy": "Von:"
+  },
+  "vehicles": {
+    "pageTitle": "Tesla Wählen",
+    "pageSubtitle": "Daten und Fahrzeug",
+    "availableVehicles": "Verfügbar",
+    "authNotice": {
+      "title": "Registrieren",
+      "subtitle": "Konto erstellen",
+      "button": "Registrieren"
+    },
+    "reservationForm": {
+      "title": "Daten",
+      "subtitle": "Abhol-/Rückgabe",
+      "pickupDate": "Abholung",
+      "returnDate": "Rückgabe",
+      "selectDate": "Wählen",
+      "button": "Weiter",
+      "duration": "Dauer",
+      "day": "Tag",
+      "days": "Tage"
+    },
+    "tags": { "seats": "Sitze" },
+    "features": {
+      "unlimitedMileage": "Unbegrenzt",
+      "insurance": "Versicherung",
+      "minAge": "21 Jahre"
+    },
+    "price": { "payAtDesk": "Vor Ort", "day": "Tag", "total": "Gesamt" },
+    "buttons": {
+      "select": "Wählen",
+      "selected": "Gewählt",
+      "notAvailable": "Nicht verfügbar"
+    },
+    "checkout": {
+      "title": "Reservierung",
+      "subtitle": "Prüfen",
+      "pickup": "Abholung",
+      "return": "Rückgabe",
+      "pricePerDay": "Preis/Tag",
+      "duration": "Dauer",
+      "discount": "Rabatt",
+      "total": "Gesamt",
+      "back": "Zurück",
+      "confirm": "Bestätigen"
+    }
+  },
+  "auth": {
+    "signIn": "Anmelden",
+    "signInSubtitle": "Konto zugreifen",
+    "createAccount": "Erstellen",
+    "createAccountSubtitle": "Mitglied werden",
+    "fullName": "Name",
+    "fullNamePlaceholder": "Name eingeben",
+    "email": "E-Mail",
+    "emailPlaceholder": "beispiel@email.com",
+    "phone": "Telefon",
+    "phonePlaceholder": "+381 XX XXX",
+    "password": "Passwort",
+    "passwordPlaceholder": "Passwort",
+    "forgotPassword": "Vergessen?",
+    "signInButton": "Anmelden",
+    "createAccountButton": "Erstellen",
+    "loading": "Warten...",
+    "or": "ODER",
+    "terms": "Sie stimmen zu",
+    "termsLink": "Nutzung",
+    "and": "und",
+    "privacyLink": "Datenschutz",
+    "footerTerms": "AGB",
+    "footerPrivacy": "Datenschutz"
+  },
+  "confirm": {
+    "title": "Bestätigen",
+    "subtitle": "Beleg hochladen",
+    "reservationId": "ID",
+    "reservationIdPlaceholder": "ID eingeben",
+    "paymentSlip": "Beleg",
+    "uploadText": "Hochladen",
+    "uploadHint": "PNG, JPG 10MB",
+    "uploadDeposit": "Kaution hochladen",
+    "clickToChange": "Ändern",
+    "paymentMethod": "Methode",
+    "payInPerson": "Persönlich",
+    "payInPersonDesc": "Im Büro",
+    "payBySlip": "Überweisung",
+    "payBySlipDesc": "Beleg",
+    "depositSlip": "Kaution",
+    "requirements": {
+      "title": "Anforderungen",
+      "one": "Betreff: ID #####",
+      "two": "Empfänger: TESLA CAR",
+      "three": "Konto: 160-6000001746148-90"
+    },
+    "termsNotice": "Sie stimmen AGB zu.",
+    "confirmButton": "Bestätigen",
+    "processing": "Verarbeitung...",
+    "success": "Bestätigt!",
+    "errorMissing": "Felder ausfüllen",
+    "errorFailed": "Fehler"
+  },
+  "dashboard": {
+    "welcome": "Willkommen",
+    "welcomeSubtitle": "Reservierungen verwalten",
+    "navigation": "Navigation",
+    "myReservations": "Meine",
+    "allReservations": "Alle",
+    "allVehicles": "Fahrzeuge",
+    "users": "Benutzer",
+    "settings": "Einstellungen",
+    "signOut": "Abmelden",
+    "backToSite": "Zur Website"
+  },
+  "admin": {
+    "allReservations": "Alle Reservierungen",
+    "allReservationsSubtitle": "Verwalten",
+    "total": "Gesamt",
+    "pending": "Ausstehend",
+    "confirmed": "Bestätigt",
+    "cancelled": "Storniert",
+    "user": "Benutzer",
+    "vehicle": "Fahrzeug",
+    "duration": "Dauer",
+    "pickup": "Abholung",
+    "return": "Rückgabe",
+    "amount": "Betrag",
+    "status": "Status",
+    "days": "Tage",
+    "awaitingConfirm": "Wartend",
+    "reservationDetails": "Details",
+    "discount": "Rabatt",
+    "paymentSlip": "Beleg",
+    "confirmReservation": "Bestätigen",
+    "reservationConfirmed": "Bestätigt!",
+    "reservationConfirmFailed": "Fehler",
+    "allVehicles": "Fahrzeuge",
+    "allVehiclesSubtitle": "Flotte",
+    "addVehicle": "Hinzufügen",
+    "day": "Tag",
+    "edit": "Bearbeiten",
+    "editVehicle": "Bearbeiten",
+    "vehicleName": "Name",
+    "pricePerDay": "Preis/Tag",
+    "teslaCode": "Code",
+    "batteryCapacity": "Batterie",
+    "range": "Reichweite",
+    "acceleration": "Beschleunigung",
+    "topSpeed": "Geschwindigkeit",
+    "description": "Beschreibung",
+    "uploadImage": "Hochladen",
+    "changeImage": "Ändern",
+    "cancel": "Abbrechen",
+    "saveChanges": "Speichern",
+    "createVehicle": "Erstellen",
+    "vehicleCreated": "Erstellt!",
+    "vehicleCreateFailed": "Fehler"
+  },
+  "myReservations": {
+    "title": "Meine Reservierungen",
+    "subtitle": "Buchungen",
+    "totalBookings": "Gesamt",
+    "activeBookings": "Aktiv",
+    "pendingBookings": "Ausstehend",
+    "noReservations": "Keine",
+    "noReservationsDesc": "Fahrzeuge ansehen",
+    "browseVehicles": "Fahrzeuge",
+    "vehicle": "Fahrzeug",
+    "duration": "Dauer",
+    "pickup": "Abholung",
+    "return": "Rückgabe",
+    "amount": "Betrag",
+    "status": "Status",
+    "days": "Tage",
+    "reservationDetails": "Details",
+    "seats": "Sitze",
+    "unlimitedMileage": "Unbegrenzt",
+    "minAge": "21 Jahre",
+    "priceWithoutDiscount": "Preis",
+    "discount": "Rabatt",
+    "totalPrice": "Gesamt",
+    "paymentSlip": "Beleg",
+    "confirmNow": "Bestätigen"
+  },
+  "carControl": {
+    "currentVehicle": "Aktuelles Fahrzeug",
+    "range": "Reichweite",
+    "charged": "geladen",
+    "interior": "Innenraum",
+    "climateOff": "Klima aus",
+    "quickActions": "Schnellaktionen",
+    "wakeUp": "Aufwecken",
+    "lockCar": "Sperren",
+    "vehicleControls": "Fahrzeug",
+    "climate": "Klima",
+    "battery": "Batterie",
+    "selectSection": "Wählen Sie einen Bereich",
+    "on": "An",
+    "off": "Aus",
+    "front": "Vorne",
+    "rear": "Hinten",
+    "lock_doors": "Türen sperren",
+    "unlock_doors": "Türen entsperren",
+    "honk_horn": "Hupen",
+    "flash_lights": "Lichthupe",
+    "open_trunk": "Kofferraum öffnen",
+    "start_vehicle": "Fahrzeug starten",
+    "fold_mirrors": "Spiegel einklappen",
+    "enable_sentry_mode": "Wächtermodus",
+    "start_climate": "Klima starten",
+    "temperature": "Temperatur",
+    "enable_defrost": "Entfrosten",
+    "seat_heater": "Sitzheizung",
+    "steering_heater": "Lenkradheizung",
+    "start_charging": "Laden starten",
+    "stop_charging": "Laden stoppen",
+    "charging_limit": "Ladelimit",
+    "open_charge_port": "Ladeanschluss"
+  },
+  "notFound": {
+    "title": "Nicht gefunden",
+    "description": "Seite existiert nicht.",
+    "goBack": "Zurück",
+    "goHome": "Startseite",
+    "needHelp": "Hilfe?",
+    "browseVehicles": "Fahrzeuge"
+  },
+  "errors": {
+    "invalidReservation": "Fahrzeug wählen",
+    "notAllowed": "Anmelden",
+    "missingData": "Daten fehlen",
+    "carNotFound": "Nicht gefunden",
+    "reservationFailed": "Fehler"
+  },
+  "success": { "reservationCreated": "Erstellt!" }
 }
