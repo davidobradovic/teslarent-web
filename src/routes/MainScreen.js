@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { User, Car, Shield, Wrench, Clock, Zap, ChevronDown, ChevronRight, Star, Phone, Mail, MapPin, Check, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import bgimage from "../assets/image-banner.JPG"
+import bgVideo from "../assets/video-ad.mp4"
+import banner2 from "../assets/banner2.jpg"
 
 const MainScreen = () => {
     const { t, i18n } = useTranslation();
@@ -76,8 +79,24 @@ const MainScreen = () => {
             </header>
 
             {/* Hero Section */}
-            <section className="hero-gradient pt-28 pb-16 lg:pt-32 lg:pb-24">
-                <div className="max-w-7xl mx-auto px-6">
+            <section className="relative pt-28 pb-16 lg:pt-32 lg:pb-24 overflow-hidden">
+                {/* Video pozadina */}
+                <div className="absolute inset-0 z-0">
+                    <video
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        className="w-full h-full object-cover"
+                    >
+                        <source src={bgVideo} type="video/mp4" />
+                    </video>
+                    {/* Overlay za bolju čitljivost teksta */}
+                    <div className="absolute inset-0 bg-white/70"></div>
+                </div>
+
+                {/* Sadržaj */}
+                <div className="relative z-10 max-w-7xl mx-auto px-6">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div className="order-2 lg:order-1">
                             <p className="text-blue-600 font-semibold text-sm tracking-wide uppercase mb-4">{t('hero.welcome')}</p>
@@ -94,7 +113,7 @@ const MainScreen = () => {
                                 <div className="border-t border-gray-200 pt-4 mb-4">
                                     <p className="text-gray-500 text-sm mb-1">{t('hero.priceFrom')}</p>
                                     <div className="flex items-baseline gap-2">
-                                        <span className="text-4xl font-bold text-gray-900">1600 RSD</span>
+                                        <span className="text-4xl font-bold text-gray-900">40 €</span>
                                         <span className="text-gray-500">{t('hero.perDay')}</span>
                                     </div>
                                 </div>
@@ -113,9 +132,9 @@ const MainScreen = () => {
                                 </Link>
                             </div>
                         </div>
-                        <div className="order-1 lg:order-2 relative">
+                        {/* <div className="order-1 lg:order-2 relative">
                             <img src="https://cdn.shopify.com/s/files/1/0628/1281/5558/files/TeslaSiva.png?v=1714031520" alt="Tesla Model 3" className="w-full max-w-2xl mx-auto drop-shadow-2xl" />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>
@@ -129,12 +148,12 @@ const MainScreen = () => {
                     </div>
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div className="relative">
-                            <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=600" alt="Happy driver" className="rounded-2xl shadow-2xl w-full" />
+                            <img src={banner2} alt="Happy driver" className="rounded-2xl shadow-2xl w-full" />
                         </div>
                         <div>
                             <div className="bg-blue-50 rounded-2xl p-8 mb-8">
                                 <h3 className="text-xl font-bold text-gray-900 mb-2">{t('rental.featureTitle')}</h3>
-                                <p className="text-gray-600 mb-4">{t('rental.featureDesc')} <span className="font-bold text-blue-600">1600 RSD {t('rental.perDay')}</span>.</p>
+                                <p className="text-gray-600 mb-4">{t('rental.featureDesc')} <span className="font-bold text-blue-600">40 € {t('rental.perDay')}</span>.</p>
                             </div>
                             <ul className="space-y-4">
                                 {[t('rental.benefits.insurance'), t('rental.benefits.registration'), t('rental.benefits.maintenance'), t('rental.benefits.flexible'), t('rental.benefits.delivery'), t('rental.benefits.support'), t('rental.benefits.replacement')].map((item, idx) => (
@@ -153,11 +172,11 @@ const MainScreen = () => {
             </section>
 
             {/* Tesla Model 3 Feature Section */}
-            <section className="py-20 bg-gradient-to-b from-blue-50 to-white">
+            {/* <section className="py-20 bg-gradient-to-b from-blue-50 to-white">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">{t('model3.title')}</h2>
-                        <p className="text-gray-600 max-w-2xl mx-auto">{t('model3.description')} <span className="font-bold text-blue-600">1600 RSD {t('model3.perDay')}</span>.</p>
+                        <p className="text-gray-600 max-w-2xl mx-auto">{t('model3.description')} <span className="font-bold text-blue-600">40 € {t('model3.perDay')}</span>.</p>
                     </div>
                     <div className="mb-12">
                         <p className="text-center text-gray-500 font-medium mb-8">{t('model3.whyChoose')}</p>
@@ -177,7 +196,7 @@ const MainScreen = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* What's Included Section */}
             <section className="py-20 bg-white">
@@ -204,17 +223,17 @@ const MainScreen = () => {
 
             {/* Comparison Table */}
             <section className="py-20 bg-gray-50">
-                <div className="max-w-4xl mx-auto px-6">
+                <div className="max-w-screen-lg mx-auto px-6">
                     <div className="text-center mb-12">
                         <p className="text-blue-600 font-semibold text-sm tracking-wide uppercase mb-4">{t('comparison.subtitle')}</p>
                         <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">{t('comparison.title')}</h2>
                     </div>
-                    <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+                    <div className="bg-white rounded-2xl shadow-xl overflow-auto">
                         <table className="w-full">
                             <thead>
                                 <tr className="border-b border-gray-200">
                                     <th className="text-left py-4 px-6 font-semibold text-gray-900"></th>
-                                    <th className="text-center py-4 px-6"><span className="bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-semibold">{t('comparison.teslaRent')}</span></th>
+                                    <th className="text-center py-4 px-6 min-w-[200px]"><span className="bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-semibold">{t('comparison.teslaRent')}</span></th>
                                     <th className="text-center py-4 px-6 text-gray-500 font-medium">{t('comparison.traditional')}</th>
                                     <th className="text-center py-4 px-6 text-gray-500 font-medium">{t('comparison.buying')}</th>
                                 </tr>
@@ -292,7 +311,7 @@ const MainScreen = () => {
             <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="relative rounded-3xl overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1617704548623-340376564e68?w=1200" alt="Tesla Interior" className="w-full h-96 object-cover" />
+                        <img src={bgimage} alt="Tesla Interior" className="w-full h-96 object-cover" />
                         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent flex items-center">
                             <div className="p-12">
                                 <p className="text-blue-400 font-semibold text-sm tracking-wide uppercase mb-2">{t('testDrive.subtitle')}</p>
@@ -399,7 +418,7 @@ const MainScreen = () => {
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="grid md:grid-cols-4 gap-12 mb-12">
                         <div className="md:col-span-1">
-                            <img src={require('../assets/teslalogo.png')} style={{ height: 40, filter: 'brightness(0) invert(1)' }} alt="Tesla Rent" className="mb-6" />
+                            <img src={require('../assets/teslalogo.png')} style={{ height: 40 }} alt="Tesla Rent" className="mb-6" />
                             <p className="text-gray-400 text-sm leading-relaxed">{t('footer.description')}</p>
                         </div>
                         <div>

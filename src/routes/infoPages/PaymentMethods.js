@@ -1,7 +1,8 @@
 import React from "react";
-import { User } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+
+import { User, Car, Shield, Wrench, Clock, Zap, ChevronDown, ChevronRight, Star, Phone, Mail, MapPin, Check, X } from "lucide-react";
 
 function PaymentMethods() {
   const { t, i18n } = useTranslation();
@@ -33,7 +34,7 @@ function PaymentMethods() {
       </header>
 
       <div className="w-full max-w-screen-md p-6 mx-auto">
-        <h1 className='text-5xl font-semibold mb-8'>Način plaćanja</h1>
+        <h1 className='text-5xl font-semibold mb-8 text-center w-full'>Način plaćanja</h1>
         <h3 className="mt-6 text-center" style={{ fontSize: 18 }}>
           Način plaćanja
           <br />
@@ -50,36 +51,46 @@ function PaymentMethods() {
         <img src="https://i.imgur.com/Gooisa2.png" className="text-center mx-auto mt-6" style={{ height: 60 }} alt="" />
       </div>
 
-      <footer className="p-6 bg-[#f7f7f7] grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="md:col-span-2">
-          <img src={require('../../assets/teslalogo.png')} style={{ height: 60 }} alt="" />
-        </div>
-        <div>
-          <h1 className="font-semibold text-xl">{t('footer.titleOne')}</h1>
-          <div className="grid grid-cols-1 gap-1 mt-3">
-            <p className="opacity-50">{t('footer.infoOne')}</p>
-            <p className="opacity-50">{t('footer.infoTwo')}</p>
-            <p className="opacity-50">{t('footer.infoThree')}</p>
-            <p className="opacity-50">{t('footer.infoFour')}</p>
-            <p className="opacity-50">{t('footer.infoFive')}</p>
-            <p className="opacity-50">{t('footer.infoSix')}</p>
-            <p className="opacity-50">{t('footer.infoSeven')}</p>
+      <footer className="bg-gray-900 text-white py-16">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid md:grid-cols-4 gap-12 mb-12">
+            <div className="md:col-span-1">
+              <img src={require('../../assets/teslalogo.png')} style={{ height: 40 }} alt="Tesla Rent" className="mb-6" />
+              <p className="text-gray-400 text-sm leading-relaxed">{t('footer.description')}</p>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">{t('footer.quickLinks')}</h4>
+              <ul className="space-y-2">
+                <li><Link to="/vehicles" className="text-gray-400 hover:text-white text-sm transition-colors">{t('footer.vehicles')}</Link></li>
+                <li><a href="#how-it-works" className="text-gray-400 hover:text-white text-sm transition-colors">{t('footer.howItWorks')}</a></li>
+                <li><a href="#faq" className="text-gray-400 hover:text-white text-sm transition-colors">{t('footer.faqLink')}</a></li>
+                <li><Link to="/auth" className="text-gray-400 hover:text-white text-sm transition-colors">{t('footer.login')}</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">{t('footer.information')}</h4>
+              <ul className="space-y-2">
+                <li><Link to="/terms-of-complaints" className="text-gray-400 hover:text-white text-sm transition-colors">{t('footer.linkOne')}</Link></li>
+                <li><Link to="/payment-terms" className="text-gray-400 hover:text-white text-sm transition-colors">{t('footer.linkTwo')}</Link></li>
+                <li><Link to="/payment-methods" className="text-gray-400 hover:text-white text-sm transition-colors">{t('footer.linkThree')}</Link></li>
+                <li><Link to="/general-terms" className="text-gray-400 hover:text-white text-sm transition-colors">{t('footer.linkFour')}</Link></li>
+                <li><Link to="/rights-to-withdraw" className="text-gray-400 hover:text-white text-sm transition-colors">{t('footer.linkFive')}</Link></li>
+                <li><Link to="/protection-of-transaction" className="text-gray-400 hover:text-white text-sm transition-colors">{t('footer.linkSix')}</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">{t('footer.contactTitle')}</h4>
+              <ul className="space-y-3">
+                <li className="flex items-center gap-3 text-gray-400 text-sm"><MapPin size={16} className="flex-shrink-0" /><span>{t('footer.address')}</span></li>
+                <li className="flex items-center gap-3 text-gray-400 text-sm"><Phone size={16} className="flex-shrink-0" /><a href="tel:+381661212000" className="hover:text-white transition-colors">{t('footer.phone')}</a></li>
+                <li className="flex items-center gap-3 text-gray-400 text-sm"><Mail size={16} className="flex-shrink-0" /><a href="mailto:info@teslarent.rs" className="hover:text-white transition-colors">{t('footer.email')}</a></li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div>
-          <h1 className="font-semibold text-xl">{t('footer.titleTwo')}</h1>
-          <div className="grid grid-cols-1 gap-1 mt-3">
-            <Link to="/terms-of-complaints" className="underline opacity-50 hover:opacity-100" href="">{t('footer.linkOne')}</Link>
-            <Link to="/payment-terms" className="underline opacity-50 hover:opacity-100" href="">{t('footer.linkTwo')}</Link>
-            <Link to="/payment-methods" className="underline opacity-50 hover:opacity-100" href="">{t('footer.linkThree')}</Link>
-            <Link to="/general-terms" className="underline opacity-50 hover:opacity-100" href="">{t('footer.linkFour')}</Link>
-            <Link to="/rights-to-withdraw" className="underline opacity-50 hover:opacity-100" href="">{t('footer.linkFive')}</Link>
-            <Link to="/protection-of-transaction" className="underline opacity-50 hover:opacity-100" href="">{t('footer.linkSix')}</Link>
+          <div className="border-t border-gray-800 pt-8 text-center">
+            <p className="text-gray-500 text-sm">{t('footer.copyright')}</p>
+            <p className="text-gray-600 text-xs mt-2">{t('footer.madeBy')} <a href="tel:+381661212000" className="hover:text-gray-400 transition-colors">David Obradović</a></p>
           </div>
-        </div>
-        <div className="md:col-span-2 text-center p-3">
-          © 2025, Telsa Rent A Car
-          <p className="text-xs opacity-50">Webiste made by: <a className="underline" href="tel:0038766415295">David Obradović</a></p>
         </div>
       </footer>
 

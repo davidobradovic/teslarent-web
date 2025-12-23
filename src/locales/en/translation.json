@@ -1,6 +1,6 @@
 {
   "header": {
-    "vehicles": "Vehicles",
+    "vehicles": "Our Fleet",
     "reservations": "My Reservations",
     "howItWorks": "How It Works",
     "faq": "FAQ",
@@ -8,261 +8,263 @@
   },
   "hero": {
     "welcome": "Welcome to Tesla Rent",
-    "title": "Your Daily",
-    "titleHighlight": "Tesla Rental",
-    "insuranceLabel": "Insurance & maintenance:",
+    "title": "Premium Electric",
+    "titleHighlight": "Vehicle Rental",
+    "subtitle": "Experience the future of driving with our premium Tesla fleet. Fully insured, unlimited mileage, and exceptional service.",
+    "insuranceLabel": "Insurance & Maintenance",
     "insuranceValue": "Included",
-    "depositLabel": "Deposit:",
+    "depositLabel": "Refundable Deposit",
     "depositValue": "€1,000",
-    "priceFrom": "Price from:",
+    "priceFrom": "Starting from",
     "perDay": "/day",
-    "unlimitedMileage": "Unlimited mileage",
-    "minAge": "21+ years, 3+ years license",
-    "bookNow": "Book Now"
+    "unlimitedMileage": "Unlimited mileage on all vehicles",
+    "minAge": "21+ years with valid license",
+    "bookNow": "Reserve Now"
   },
   "pricing": {
     "title": "Transparent Pricing",
     "subtitle": "The longer you rent, the more you save",
-    "deposit": "Deposit",
+    "description": "Our flexible pricing rewards longer rentals with significant discounts. No hidden fees, no surprises.",
+    "deposit": "Security Deposit",
     "depositAmount": "€1,000",
-    "depositNote": "Refundable upon vehicle return",
-    "requirements": "Requirements",
-    "requirementAge": "Minimum 21 years old",
+    "depositNote": "Fully refundable upon safe return of the vehicle",
+    "requirements": "Rental Requirements",
+    "requirementAge": "Minimum 21 years of age",
     "requirementLicense": "Valid driver's license for 3+ years",
     "tiers": {
-      "tier1": { "days": "1-3 days", "price": "€100", "perDay": "/day" },
-      "tier2": { "days": "4-7 days", "price": "€85", "perDay": "/day" },
-      "tier3": { "days": "8-15 days", "price": "€75", "perDay": "/day" },
-      "tier4": { "days": "16-24 days", "price": "€60", "perDay": "/day" },
-      "tier5": { "days": "25-29 days", "price": "€50", "perDay": "/day" },
-      "tier6": { "days": "30+ days", "price": "€40", "perDay": "/day" }
+      "tier1": {
+        "days": "1-3 days",
+        "price": "€100",
+        "perDay": "/day"
+      },
+      "tier2": {
+        "days": "4-7 days",
+        "price": "€85",
+        "perDay": "/day"
+      },
+      "tier3": {
+        "days": "8-15 days",
+        "price": "€75",
+        "perDay": "/day"
+      },
+      "tier4": {
+        "days": "16-24 days",
+        "price": "€60",
+        "perDay": "/day"
+      },
+      "tier5": {
+        "days": "25-29 days",
+        "price": "€50",
+        "perDay": "/day"
+      },
+      "tier6": {
+        "days": "30+ days",
+        "price": "€40",
+        "perDay": "/day"
+      }
     },
     "saveBadge": "Save up to 60%",
     "popular": "Most Popular"
   },
   "rental": {
     "subtitle": "Tesla Rent A Car",
-    "title": "Daily and short-term car rentals, done better",
-    "featureTitle": "Experience the privilege of electric driving",
-    "featureDesc": "with Tesla rental, starting from just",
+    "title": "Premium Electric Vehicle Rental",
+    "description": "Choose from our carefully maintained fleet of Tesla vehicles. Each car comes fully charged, cleaned, and ready for your journey.",
+    "featureTitle": "Experience electric driving excellence",
+    "featureDesc": "Starting from just",
     "perDay": "per day",
     "benefits": {
-      "insurance": "Full insurance coverage",
-      "registration": "Registration and taxes included",
-      "maintenance": "Scheduled maintenance included",
-      "flexible": "Flexible rental periods",
-      "delivery": "Free delivery to your address",
-      "support": "24/7 roadside assistance",
-      "replacement": "Replacement vehicle during service"
+      "insurance": "Comprehensive insurance coverage",
+      "registration": "All registration and taxes included",
+      "maintenance": "Regular maintenance and servicing included",
+      "flexible": "Flexible pickup and return times",
+      "delivery": "Free delivery within city limits",
+      "support": "24/7 roadside assistance and support",
+      "replacement": "Replacement vehicle if needed"
     },
     "learnMore": "Learn More"
   },
-  "model3": {
-    "title": "Brand New 2024 Tesla Model 3",
-    "description": "Experience the pinnacle of electric driving with Tesla Model 3 rental, starting from just",
-    "perDay": "per day",
-    "whyChoose": "Why choose Tesla Model 3 Rental?",
-    "features": {
-      "ownership": {
-        "title": "Hassle-Free Experience",
-        "desc": "Enjoy driving a Tesla without ownership costs, depreciation, or resale concerns."
-      },
-      "technology": {
-        "title": "Cutting-Edge Technology",
-        "desc": "Access the latest software updates, Autopilot, and advanced safety features."
-      },
-      "eco": {
-        "title": "Eco-Friendly Choice",
-        "desc": "Zero emissions. Clean conscience. Tesla Model 3 is perfect for a sustainable future."
-      },
-      "performance": {
-        "title": "Luxury & Performance",
-        "desc": "0 to 100 in just 6.1 seconds. Space for the whole family. Ultimate comfort."
-      }
-    }
-  },
   "included": {
-    "title": "What's Included in Your Rental?",
+    "title": "What's Included in Every Rental?",
+    "subtitle": "Everything you need for a worry-free driving experience",
     "insurance": {
       "title": "Comprehensive Insurance",
-      "desc": "Full vehicle and passenger protection, collision and liability coverage."
+      "desc": "Full coverage for vehicle damage, theft, and third-party liability. Drive with complete peace of mind."
     },
     "maintenance": {
-      "title": "Regular Maintenance",
-      "desc": "All services, tire changes, and technical inspections included."
+      "title": "Maintenance & Service",
+      "desc": "All regular maintenance, tire changes, and technical inspections are covered. We handle everything."
     },
     "support": {
-      "title": "24/7 Roadside Assistance",
-      "desc": "Non-stop support wherever you are, 365 days a year."
+      "title": "24/7 Support",
+      "desc": "Round-the-clock roadside assistance wherever you are. Help is always just a phone call away."
     },
     "flexibility": {
-      "title": "Flexibility",
-      "desc": "Option to extend or change your rental without penalties."
+      "title": "Flexible Terms",
+      "desc": "Extend or modify your rental anytime. No penalties, no hassle, complete flexibility."
     }
   },
   "comparison": {
-    "subtitle": "Comparison",
-    "title": "Why drive with Tesla Rent?",
+    "subtitle": "Why Choose Us",
+    "title": "Tesla Rent vs. Alternatives",
     "features": {
       "noDeposit": "Refundable €1,000 deposit",
-      "noHiddenFees": "No hidden fees",
-      "registrationIncluded": "Registration included",
-      "maintenanceIncluded": "Maintenance included",
-      "insuranceIncluded": "Insurance included",
-      "chargerIncluded": "Charger access included",
-      "flexibleDates": "Flexible rental dates"
+      "noHiddenFees": "No hidden fees or charges",
+      "registrationIncluded": "Registration and taxes included",
+      "maintenanceIncluded": "Full maintenance coverage",
+      "insuranceIncluded": "Comprehensive insurance included",
+      "chargerIncluded": "Access to charging network",
+      "flexibleDates": "Flexible rental periods"
     },
     "teslaRent": "Tesla Rent",
-    "traditional": "Traditional",
-    "buying": "Buying"
+    "traditional": "Traditional Rental",
+    "buying": "Buying a Car"
   },
   "howItWorks": {
-    "subtitle": "Our Process",
+    "subtitle": "Simple Process",
     "title": "How It Works",
-    "viewAll": "View All Vehicles",
+    "description": "Renting a Tesla has never been easier. Follow these simple steps and hit the road.",
+    "viewAll": "View Our Fleet",
     "chooseYourPlan": "Choose Your Plan",
     "steps": {
       "step1": {
         "number": "01",
         "title": "Choose Your Vehicle",
-        "desc": "Browse our Tesla fleet and select the model that suits you best."
+        "desc": "Browse our premium Tesla fleet and select the model that best suits your needs and preferences."
       },
       "step2": {
         "number": "02",
         "title": "Book Online",
-        "desc": "Fill out a simple form, upload documents, and choose pickup date."
+        "desc": "Complete our simple booking form, select your dates, and confirm your reservation in minutes."
       },
       "step3": {
         "number": "03",
         "title": "Drive Away",
-        "desc": "Pick up your vehicle at the agreed location and enjoy worry-free driving."
+        "desc": "Pick up your fully charged Tesla at the agreed location and enjoy your premium driving experience."
       }
     }
   },
   "faq": {
     "title": "Frequently Asked Questions",
-    "q1": "What documents do I need to rent?",
-    "a1": "You need a valid driver's license (held for at least 3 years), ID card or passport, and proof of address. Minimum age is 21 years.",
-    "q2": "Is insurance included in the price?",
-    "a2": "Yes, all our vehicles come with full insurance included in the daily price.",
-    "q3": "What is the deposit amount?",
-    "a3": "The deposit is €1,000, fully refundable upon return of the vehicle in good condition.",
-    "q4": "How many kilometers are included?",
-    "a4": "We offer unlimited mileage on all our rentals.",
-    "q5": "What are the pricing tiers?",
-    "a5": "1-3 days: €100/day, 4-7 days: €85/day, 8-15 days: €75/day, 16-24 days: €60/day, 25-29 days: €50/day, 30+ days: €40/day."
+    "subtitle": "Everything you need to know about renting with us",
+    "q1": "What documents do I need to rent a vehicle?",
+    "a1": "You'll need a valid driver's license held for at least 3 years, a passport or ID card, and proof of address. The minimum age requirement is 21 years.",
+    "q2": "Is insurance included in the rental price?",
+    "a2": "Yes, all our vehicles come with comprehensive insurance coverage included in the daily rate. This covers vehicle damage, theft, and third-party liability.",
+    "q3": "What is the deposit amount and when is it refunded?",
+    "a3": "The security deposit is €1,000, which is fully refundable upon return of the vehicle in good condition. The refund is processed within 5-7 business days.",
+    "q4": "Are there any mileage restrictions?",
+    "a4": "No, we offer unlimited mileage on all our rentals. Drive as much as you want without worrying about extra charges.",
+    "q5": "What are your pricing tiers?",
+    "a5": "Our pricing is based on rental duration: 1-3 days at €100/day, 4-7 days at €85/day, 8-15 days at €75/day, 16-24 days at €60/day, 25-29 days at €50/day, and 30+ days at €40/day.",
+    "q6": "How does charging work?",
+    "a6": "All vehicles come fully charged. You'll have access to Tesla's Supercharger network. We provide a charging card and full instructions on how to use it."
   },
   "testDrive": {
-    "subtitle": "Book a Test Drive",
-    "title": "Hop in your favourite Tesla Model 3 & take a test drive",
+    "subtitle": "Experience It Yourself",
+    "title": "Ready to experience electric driving?",
+    "description": "Book your Tesla today and discover why electric is the future of driving.",
     "button": "Book Now"
   },
   "testimonials": {
-    "title": "What Our Customers Say About Us",
+    "title": "What Our Customers Say",
+    "subtitle": "Don't just take our word for it - hear from our satisfied customers",
     "items": {
       "t1": {
         "name": "Marko Petrović",
-        "role": "Director",
-        "text": "Excellent service! Tesla Model 3 is a fantastic car, and the rental process was quick and easy."
+        "role": "Business Executive",
+        "text": "Outstanding service from start to finish! The Tesla was immaculate, and the booking process couldn't have been easier. Will definitely rent again."
       },
       "t2": {
         "name": "Ana Jovanović",
         "role": "Entrepreneur",
-        "text": "I've been using Tesla Rent for 6 months and I'm very satisfied. Everything is included in the price, no hidden costs."
+        "text": "I've been renting from Tesla Rent for six months now. The pricing is transparent, the vehicles are always in perfect condition, and the team is incredibly helpful."
       },
       "t3": {
         "name": "Stefan Nikolić",
-        "role": "IT Manager",
-        "text": "Professional service, modern vehicle, and fair price. Highly recommend!"
+        "role": "IT Consultant",
+        "text": "Professional service, pristine vehicles, and competitive pricing. This is how car rental should be. Highly recommended!"
       },
       "t4": {
         "name": "Jelena Đorđević",
-        "role": "Doctor",
-        "text": "Tesla is the future of driving. Thanks to Tesla Rent, I can enjoy it without worrying about maintenance."
+        "role": "Medical Professional",
+        "text": "Electric driving is the future, and Tesla Rent makes it accessible. Great experience every single time I rent from them."
       }
     }
   },
   "contact": {
-    "subtitle": "Contact Us",
-    "title": "Get In Touch With Us",
-    "formIntro": "Fill out the form below:",
+    "subtitle": "Get In Touch",
+    "title": "Contact Our Team",
+    "description": "Have questions? We're here to help. Reach out to our friendly team.",
+    "formIntro": "Send us a message",
     "firstName": "First Name",
     "lastName": "Last Name",
-    "email": "Email",
-    "message": "Message",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "message": "Your Message",
     "submit": "Send Message"
   },
   "newsletter": {
-    "title": "Sign Up To Our Newsletter",
-    "placeholder": "Your email",
+    "title": "Stay Updated",
+    "description": "Subscribe to our newsletter for exclusive offers and updates.",
+    "placeholder": "Enter your email",
     "button": "Subscribe"
   },
-  "dataProtection": {
-    "title": "Record of persons for data protection",
-    "serialNumber": "Serial No.",
-    "controllerName": "Controller Name",
-    "controllerAddress": "Controller Address",
-    "dpoName": "DPO Name",
-    "dpoAddress": "DPO Address",
-    "dpoEmail": "DPO Email",
-    "dpoPhone": "DPO Phone",
-    "data": {
-      "serialNumber": "1.",
-      "controllerName": "Tesla rent a car",
-      "controllerAddress": "Vojvode Vrtaka br.10a",
-      "dpoName": "Nikola Knežević",
-      "dpoAddress": "Djordja Rajkovića 019a/2/27 Novi Sad",
-      "dpoEmail": "rent.a.tesla.car@gmail.com",
-      "dpoPhone": "064/2105790"
-    }
-  },
   "footer": {
-    "description": "Your partner for premium electric vehicles. Enjoy worry-free driving.",
+    "description": "Your premium partner for electric vehicle rental. Experience the future of driving with our exceptional Tesla fleet.",
     "quickLinks": "Quick Links",
-    "vehicles": "Vehicles",
+    "vehicles": "Our Fleet",
     "howItWorks": "How It Works",
     "faqLink": "FAQ",
-    "login": "Login",
+    "login": "My Account",
     "information": "Information",
-    "linkOne": "Terms of Complaints",
+    "linkOne": "Terms of Service",
     "linkTwo": "Payment Terms",
     "linkThree": "Payment Methods",
-    "linkFour": "General Terms",
-    "linkFive": "Right to Withdraw",
-    "linkSix": "Transaction Protection",
-    "contactTitle": "Contact",
-    "address": "Vojvode Vratka 10a, 11000 Belgrade",
+    "linkFour": "General Conditions",
+    "linkFive": "Cancellation Policy",
+    "linkSix": "Privacy Policy",
+    "contactTitle": "Contact Us",
+    "address": "Vojvode Vratka 10a, 11000 Belgrade, Serbia",
     "phone": "+381 66 12 12 00",
     "email": "info@teslarent.rs",
-    "copyright": "© 2025, Tesla Rent A Car. All rights reserved.",
-    "madeBy": "Website made by:"
+    "copyright": "© 2025 Tesla Rent A Car. All rights reserved.",
+    "madeBy": "Website by"
   },
   "vehicles": {
     "pageTitle": "Choose Your Tesla",
-    "pageSubtitle": "Select dates and find your perfect electric vehicle",
+    "pageSubtitle": "Select your dates and discover our premium fleet of electric vehicles",
     "availableVehicles": "Available Vehicles",
-    "pricingNote": "Price depends on rental duration",
+    "selectVehicleDesc": "Choose from our carefully maintained Tesla fleet",
+    "pricingNote": "Price per day based on rental duration",
+    "viewPricing": "View Pricing",
+    "youSave": "You save",
     "authNotice": {
-      "title": "Register to make a reservation",
-      "subtitle": "Create an account to book your Tesla",
-      "button": "Register Now"
+      "title": "Create an Account to Book",
+      "subtitle": "Sign up in seconds to reserve your Tesla today",
+      "button": "Create Account"
     },
     "reservationForm": {
-      "title": "Select Your Dates",
-      "subtitle": "Choose pickup and return dates",
+      "title": "Select Your Rental Period",
+      "subtitle": "Choose your pickup and return dates",
       "pickupDate": "Pickup Date & Time",
       "returnDate": "Return Date & Time",
       "selectDate": "Select date",
-      "button": "Continue",
+      "button": "Continue to Checkout",
       "duration": "Duration",
       "day": "day",
       "days": "days"
     },
-    "tags": { "seats": "seats" },
+    "tags": {
+      "seats": "seats"
+    },
     "features": {
-      "unlimitedMileage": "Unlimited mileage",
-      "insurance": "Full insurance included",
-      "minAge": "Min. 21 years, 3+ years license"
+      "unlimitedMileage": "Unlimited mileage included",
+      "insurance": "Comprehensive insurance included",
+      "minAge": "Min. 21 years, 3+ years license",
+      "minAgeDesc": "Valid driver's license required",
+      "licenseDesc": "Minimum 3 years driving experience",
+      "support": "24/7 roadside assistance"
     },
     "price": {
       "payAtDesk": "Pay at pickup",
@@ -271,46 +273,48 @@
       "from": "from"
     },
     "buttons": {
-      "select": "Select Vehicle",
+      "select": "Select This Vehicle",
       "selected": "Selected",
       "notAvailable": "Not Available"
     },
     "checkout": {
-      "title": "Your Reservation",
-      "subtitle": "Review and confirm your booking",
+      "title": "Complete Your Reservation",
+      "subtitle": "Review your booking details and confirm",
       "pickup": "Pickup",
       "return": "Return",
       "pricePerDay": "Price per day",
-      "duration": "Duration",
-      "discount": "Discount",
-      "total": "Total Price",
-      "deposit": "Deposit (refundable)",
-      "depositNote": "Paid at pickup, refunded on return",
-      "requirements": "Requirements",
-      "requirementAge": "Minimum 21 years old",
-      "requirementLicense": "Driver's license 3+ years",
-      "back": "Back",
-      "confirm": "Confirm Reservation"
+      "duration": "Rental duration",
+      "discount": "Duration discount",
+      "total": "Total Amount",
+      "priceSummary": "Price Summary",
+      "deposit": "Security Deposit",
+      "depositNote": "Paid at pickup, fully refunded upon return",
+      "requirements": "Rental Requirements",
+      "requirementAge": "Minimum 21 years of age",
+      "requirementLicense": "Driver's license valid for 3+ years",
+      "back": "Back to Selection",
+      "confirm": "Confirm Reservation",
+      "termsNote": "By confirming, you agree to our terms and conditions"
     }
   },
   "auth": {
     "signIn": "Sign In",
-    "signInSubtitle": "Access your Tesla Rent account",
+    "signInSubtitle": "Welcome back! Sign in to access your account",
     "createAccount": "Create Account",
-    "createAccountSubtitle": "Join Tesla Rent today",
+    "createAccountSubtitle": "Join Tesla Rent and start your electric journey",
     "fullName": "Full Name",
     "fullNamePlaceholder": "Enter your full name",
     "email": "Email Address",
-    "emailPlaceholder": "example@email.com",
+    "emailPlaceholder": "your@email.com",
     "phone": "Phone Number",
     "phonePlaceholder": "+381 XX XXX XXXX",
     "password": "Password",
     "passwordPlaceholder": "Enter your password",
-    "forgotPassword": "Forgot Password?",
+    "forgotPassword": "Forgot your password?",
     "signInButton": "Sign In",
     "createAccountButton": "Create Account",
     "loading": "Please wait...",
-    "or": "OR",
+    "or": "or",
     "terms": "By continuing, you agree to our",
     "termsLink": "Terms of Service",
     "and": "and",
@@ -319,54 +323,54 @@
     "footerPrivacy": "Privacy"
   },
   "confirm": {
-    "title": "Confirm Reservation",
-    "subtitle": "Upload your payment slip and confirm your reservation.",
+    "title": "Confirm Your Reservation",
+    "subtitle": "Upload your payment confirmation and complete your booking",
     "reservationId": "Reservation ID",
     "reservationIdPlaceholder": "Enter your reservation ID",
-    "paymentSlip": "Payment Slip",
-    "uploadText": "Click or drag to upload payment slip",
-    "uploadHint": "PNG, JPG up to 10MB",
-    "uploadDeposit": "Click or drag to upload deposit slip",
-    "clickToChange": "Click to change image",
+    "paymentSlip": "Payment Confirmation",
+    "uploadText": "Click or drag to upload",
+    "uploadHint": "Supported formats: PNG, JPG (max 10MB)",
+    "uploadDeposit": "Upload deposit payment slip",
+    "clickToChange": "Click to change",
     "paymentMethod": "Deposit Payment Method",
-    "payInPerson": "Pay in Person",
-    "payInPersonDesc": "Pay deposit at our office",
+    "payInPerson": "Pay In Person",
+    "payInPersonDesc": "Pay the deposit at our office when you pick up",
     "payBySlip": "Bank Transfer",
-    "payBySlipDesc": "Upload deposit slip",
-    "depositSlip": "Deposit Payment Slip",
+    "payBySlipDesc": "Transfer the deposit and upload confirmation",
+    "depositSlip": "Deposit Payment Confirmation",
     "requirements": {
-      "title": "Payment Slip Requirements",
-      "one": "Subject: Payment for reservation ID #####",
-      "two": "Receiver: TESLA CAR RENT-A-CAR",
+      "title": "Payment Requirements",
+      "one": "Reference: Reservation ID #####",
+      "two": "Recipient: TESLA CAR RENT-A-CAR",
       "three": "Account: 160-6000001746148-90"
     },
-    "termsNotice": "By confirming your reservation, you agree to our terms and conditions.",
+    "termsNotice": "By confirming, you agree to our rental terms and conditions. Your reservation will be processed within 24 hours.",
     "confirmButton": "Confirm Reservation",
     "processing": "Processing...",
     "success": "Reservation confirmed successfully!",
     "errorMissing": "Please fill in all required fields",
-    "errorFailed": "Failed to confirm reservation."
+    "errorFailed": "Confirmation failed. Please try again."
   },
   "dashboard": {
-    "welcome": "Welcome back",
-    "welcomeSubtitle": "Manage your reservations and account",
+    "welcome": "Welcome Back",
+    "welcomeSubtitle": "Manage your reservations and account settings",
     "navigation": "Navigation",
     "myReservations": "My Reservations",
     "allReservations": "All Reservations",
-    "allVehicles": "All Vehicles",
+    "allVehicles": "Manage Vehicles",
     "users": "Users",
     "settings": "Settings",
     "signOut": "Sign Out",
-    "backToSite": "Back to site"
+    "backToSite": "Back to Website"
   },
   "admin": {
     "allReservations": "All Reservations",
-    "allReservationsSubtitle": "View and manage all customer reservations",
+    "allReservationsSubtitle": "View and manage all customer bookings",
     "total": "Total",
     "pending": "Pending",
     "confirmed": "Confirmed",
     "cancelled": "Cancelled",
-    "user": "User",
+    "user": "Customer",
     "vehicle": "Vehicle",
     "duration": "Duration",
     "pickup": "Pickup",
@@ -377,40 +381,70 @@
     "awaitingConfirm": "Awaiting",
     "reservationDetails": "Reservation Details",
     "discount": "Discount",
-    "paymentSlip": "Payment Slip",
-    "confirmReservation": "Confirm Reservation",
-    "reservationConfirmed": "Reservation confirmed!",
+    "paymentSlip": "Payment Confirmation",
+    "confirmReservation": "Confirm Booking",
+    "reservationConfirmed": "Reservation confirmed successfully!",
     "reservationConfirmFailed": "Failed to confirm reservation",
-    "allVehicles": "All Vehicles",
-    "allVehiclesSubtitle": "Manage your vehicle fleet",
+    "allVehicles": "Vehicle Fleet",
+    "allVehiclesSubtitle": "Manage your Tesla fleet",
     "addVehicle": "Add Vehicle",
     "day": "day",
     "edit": "Edit",
     "editVehicle": "Edit Vehicle",
     "vehicleName": "Vehicle Name",
     "pricePerDay": "Price per Day",
-    "teslaCode": "Tesla Code",
-    "batteryCapacity": "Battery (kWh)",
+    "teslaCode": "Tesla Model Code",
+    "batteryCapacity": "Battery Capacity (kWh)",
     "range": "Range (km)",
-    "acceleration": "Acceleration (0-100)",
+    "acceleration": "0-100 km/h (seconds)",
     "topSpeed": "Top Speed (km/h)",
     "description": "Description",
-    "uploadImage": "Click to upload image",
+    "uploadImage": "Upload Image",
     "changeImage": "Change Image",
     "cancel": "Cancel",
     "saveChanges": "Save Changes",
-    "createVehicle": "Create Vehicle",
-    "vehicleCreated": "Vehicle created successfully!",
-    "vehicleCreateFailed": "Failed to create vehicle"
+    "createVehicle": "Add Vehicle",
+    "vehicleCreated": "Vehicle added successfully!",
+    "vehicleCreateFailed": "Failed to add vehicle",
+    "vehicleUpdated": "Vehicle updated successfully!",
+    "vehicleUpdateFailed": "Failed to update vehicle",
+    "vehicleDeleted": "Vehicle deleted successfully!",
+    "vehicleDeleteFailed": "Failed to delete vehicle",
+    "deleteVehicle": "Delete Vehicle",
+    "deleteVehicleConfirm": "Are you sure you want to delete this vehicle?",
+    "deleteWarning": "This action cannot be undone.",
+    "delete": "Delete",
+    "deleting": "Deleting...",
+    "saving": "Saving...",
+    "noVehicles": "No vehicles yet",
+    "noVehiclesDesc": "Add your first vehicle to get started",
+    "addVehicleDesc": "Fill in the details below to add a new vehicle",
+    "editVehicleDesc": "Update the vehicle information below",
+    "basicInfo": "Basic Information",
+    "appearance": "Appearance",
+    "performance": "Performance",
+    "exteriorColor": "Exterior Color",
+    "interiorColor": "Interior Color",
+    "wheels": "Wheels",
+    "selectColor": "Select exterior color",
+    "selectInterior": "Select interior color",
+    "selectWheels": "Select wheel type",
+    "vehicleUpdated": "Vehicle updated successfully!",
+    "vehicleUpdateFailed": "Failed to update vehicle",
+    "vehicleDeleted": "Vehicle deleted successfully!",
+    "vehicleDeleteFailed": "Failed to delete vehicle",
+    "delete": "Delete",
+    "deleteConfirmTitle": "Delete Vehicle?",
+    "deleteConfirmDesc": "Are you sure you want to delete this vehicle? This action cannot be undone."
   },
   "myReservations": {
     "title": "My Reservations",
-    "subtitle": "View and manage your bookings",
+    "subtitle": "View and manage your current and past bookings",
     "totalBookings": "Total Bookings",
     "activeBookings": "Active",
     "pendingBookings": "Pending",
-    "noReservations": "No reservations yet",
-    "noReservationsDesc": "Start by browsing our available vehicles",
+    "noReservations": "No Reservations Yet",
+    "noReservationsDesc": "You haven't made any reservations yet. Browse our fleet to get started.",
     "browseVehicles": "Browse Vehicles",
     "vehicle": "Vehicle",
     "duration": "Duration",
@@ -422,11 +456,11 @@
     "reservationDetails": "Reservation Details",
     "seats": "seats",
     "unlimitedMileage": "Unlimited mileage",
-    "minAge": "21 years required",
-    "priceWithoutDiscount": "Price without discount",
+    "minAge": "21+ years required",
+    "priceWithoutDiscount": "Subtotal",
     "discount": "Discount",
-    "totalPrice": "Total Price",
-    "paymentSlip": "Payment Slip",
+    "totalPrice": "Total",
+    "paymentSlip": "Payment Confirmation",
     "confirmNow": "Confirm Now"
   },
   "carControl": {
@@ -437,11 +471,11 @@
     "climateOff": "Climate off",
     "quickActions": "Quick Actions",
     "wakeUp": "Wake Up",
-    "lockCar": "Lock Car",
-    "vehicleControls": "Vehicle",
+    "lockCar": "Lock",
+    "vehicleControls": "Controls",
     "climate": "Climate",
     "battery": "Battery",
-    "selectSection": "Select a section above to control your vehicle",
+    "selectSection": "Select a category to control your vehicle",
     "on": "On",
     "off": "Off",
     "front": "Front",
@@ -454,30 +488,51 @@
     "start_vehicle": "Start Vehicle",
     "fold_mirrors": "Fold Mirrors",
     "enable_sentry_mode": "Sentry Mode",
-    "start_climate": "Start Climate",
+    "start_climate": "Climate Control",
     "temperature": "Temperature",
     "enable_defrost": "Defrost",
     "seat_heater": "Seat Heater",
-    "steering_heater": "Steering Heater",
+    "steering_heater": "Wheel Heater",
     "start_charging": "Start Charging",
     "stop_charging": "Stop Charging",
-    "charging_limit": "Charging Limit",
-    "open_charge_port": "Open Charge Port"
+    "charging_limit": "Charge Limit",
+    "open_charge_port": "Charge Port"
   },
   "notFound": {
-    "title": "Page not found",
-    "description": "The page you're looking for doesn't exist or has been moved.",
+    "title": "Page Not Found",
+    "description": "Sorry, the page you're looking for doesn't exist or has been moved.",
     "goBack": "Go Back",
-    "goHome": "Go Home",
+    "goHome": "Return Home",
     "needHelp": "Need help?",
     "browseVehicles": "Browse our vehicles"
   },
   "errors": {
-    "invalidReservation": "Please select at least 1 day and choose a vehicle",
-    "notAllowed": "Please log in to make a reservation",
-    "missingData": "Missing required data",
-    "carNotFound": "Vehicle not found",
-    "reservationFailed": "Failed to create reservation"
+    "invalidReservation": "Please select dates and a vehicle to continue",
+    "notAllowed": "Please sign in to make a reservation",
+    "missingData": "Required information is missing",
+    "carNotFound": "Selected vehicle not found",
+    "reservationFailed": "Failed to create reservation. Please try again."
   },
-  "success": { "reservationCreated": "Reservation created successfully!" }
+  "success": {
+    "reservationCreated": "Your reservation has been created successfully!"
+  },
+  "dataProtection": {
+    "title": "Data Protection Information",
+    "serialNumber": "Ref.",
+    "controllerName": "Data Controller",
+    "controllerAddress": "Address",
+    "dpoName": "DPO Name",
+    "dpoAddress": "DPO Address",
+    "dpoEmail": "DPO Email",
+    "dpoPhone": "DPO Phone",
+    "data": {
+      "serialNumber": "1.",
+      "controllerName": "Tesla Rent A Car",
+      "controllerAddress": "Vojvode Vrtaka 10a, Belgrade",
+      "dpoName": "Nikola Knežević",
+      "dpoAddress": "Đorđa Rajkovića 019a/2/27, Novi Sad",
+      "dpoEmail": "rent.a.tesla.car@gmail.com",
+      "dpoPhone": "+381 64 210 5790"
+    }
+  }
 }
