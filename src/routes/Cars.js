@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { Users, Snowflake, Check, ChevronRight, ChevronLeft, Calendar, ArrowRight, ShieldCheck, User, Zap, AlertCircle, Battery, Gauge, Star, Clock, MapPin, CreditCard, Info, X } from "lucide-react";
+import { Users, Snowflake, Check, ChevronRight, ChevronLeft, Calendar, ArrowRight, ShieldCheck, User, Zap, AlertCircle, Battery, Gauge, Star, Clock, MapPin, CreditCard, Info, X, PaintBucket, CarFront, ShipWheel } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAppContext } from "../context/ApplicationContext";
 import Cookies from 'js-cookie';
 import { toast } from "react-toastify";
 import { useTranslation } from 'react-i18next';
+import { GiCartwheel } from "react-icons/gi";
+import { PiSeatDuotone } from "react-icons/pi";
+
 
 // Pricing tiers
 const PRICING_TIERS = [
@@ -45,6 +48,24 @@ function Cars() {
     const [durationDays, setDurationDays] = useState(0);
     const [userId, setUserId] = useState(null);
     const [showPricingModal, setShowPricingModal] = useState(false);
+
+    const exteriorColorMap = {
+        'Pearl White': { label: 'Pearl White', color: '#f2f2f2' },
+        'Solid Black': { label: 'Solid Black', color: '#000000' },
+        'Midnight Silver': { label: 'Midnight Silver', color: '#42464a' },
+        'Deep Blue': { label: 'Deep Blue', color: '#1e3a5f' },
+        'Red Multi-Coat': { label: 'Red', color: '#a82535' },
+        'Quicksilver': { label: 'Quicksilver', color: '#8c8c8c' },
+        'Ultra White': { label: 'Ultra White', color: '#ffffff' },
+    };
+
+    const interiorColorMap = {
+        'All Black': { label: 'All Black', color: '#1a1a1a' },
+        'Black and White': { label: 'Black & White', color: '#f5f5f5' },
+        'Cream': { label: 'Cream', color: '#f5f0e6' },
+        'Walnut Decor': { label: 'Walnut', color: '#5c4033' },
+    };
+
 
     useEffect(() => {
         const id = Cookies.get('userId');
@@ -564,11 +585,11 @@ function Cars() {
                                         </div>
 
                                         {/* Price */}
-                                        <div className="stat-card bg-gray-900 text-white border-0">
+                                        <div className="stat-card bg-gray-900 text-black border-0">
                                             <CreditCard size={20} className="mx-auto text-gray-400 mb-2" />
-                                            <p className="text-sm text-gray-400 mb-1">{t('vehicles.checkout.pricePerDay')}</p>
+                                            <p className="text-sm opacity-50 mb-1">{t('vehicles.checkout.pricePerDay')}</p>
                                             <p className="text-3xl font-bold">€{pricing.pricePerDay}</p>
-                                            <p className="text-sm text-gray-400">/{t('vehicles.price.day')}</p>
+                                            <p className="text-sm opacity-50">/{t('vehicles.price.day')}</p>
                                             {pricing.savingsPercent > 0 && (
                                                 <div className="mt-2">
                                                     <span className="savings-badge">
@@ -649,24 +670,28 @@ function Cars() {
                                                 style={{ animationDelay: `${idx * 0.1}s` }}
                                             >
                                                 {/* Vehicle Image */}
-                                                <div className="vehicle-image-container">
+                                                <div
+                                                    className="vehicle-image-container relative w-full h-48 bg-no-repeat bg-center bg-contain"
+                                                    style={{
+                                                        backgroundImage: `url(${vehicle.banner_image})`,
+                                                        backgroundSize: 'cover',
+                                                        backgroundPosition: 'center',
+                                                    }}
+                                                >
                                                     {isSelected && (
-                                                        <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold flex items-center gap-1">
+                                                        <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold flex items-center gap-1 z-20">
                                                             <Check size={14} />
                                                             {t('vehicles.buttons.selected')}
                                                         </div>
                                                     )}
+
                                                     {isBusy && (
-                                                        <div className="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                                        <div className="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold z-20">
                                                             {t('vehicles.buttons.notAvailable')}
                                                         </div>
                                                     )}
-                                                    <img
-                                                        src={vehicle.banner_image}
-                                                        alt={vehicle.vehicle_name}
-                                                        className="w-full h-48 object-contain relative z-10"
-                                                    />
                                                 </div>
+
 
                                                 {/* Vehicle Info */}
                                                 <div className="p-6">
@@ -690,9 +715,6 @@ function Cars() {
                                                             <Users size={14} /> 5 {t('vehicles.tags.seats')}
                                                         </span>
                                                         <span className="feature-tag">
-                                                            <Battery size={14} /> {vehicle.battery_capacity_kwh} kWh
-                                                        </span>
-                                                        <span className="feature-tag">
                                                             <Zap size={14} /> {vehicle.range_km} km
                                                         </span>
                                                         <span className="feature-tag">
@@ -700,6 +722,15 @@ function Cars() {
                                                         </span>
                                                         <span className="feature-tag">
                                                             <Snowflake size={14} /> A/C
+                                                        </span>
+                                                        <span className="feature-tag">
+                                                            <PaintBucket size={14} /> {vehicle.exterior_color}
+                                                        </span>
+                                                        <span className="feature-tag">
+                                                            <PiSeatDuotone size={14} /> {vehicle.interior_color}
+                                                        </span>
+                                                        <span className="feature-tag">
+                                                            <GiCartwheel size={14} /> {vehicle.wheel_size}"
                                                         </span>
                                                     </div>
 
@@ -743,7 +774,7 @@ function Cars() {
                         {/* Sticky Footer */}
                         {selectedCar && durationDays > 0 && (
                             <div className="sticky-footer animate-fade-in">
-                                <div className="max-w-7xl mx-auto flex items-center justify-between">
+                                <div className="max-w-7xl mx-auto flex items-center flex-wrap justify-between">
                                     <div className="flex items-center gap-6">
                                         <div>
                                             <p className="text-sm text-gray-500">{t('vehicles.price.total')}</p>
