@@ -7,6 +7,7 @@ import { toast } from "react-toastify";
 import { useTranslation } from 'react-i18next';
 import { GiCartwheel } from "react-icons/gi";
 import { PiSeatDuotone } from "react-icons/pi";
+import Datepicker from "react-tailwindcss-datepicker";
 
 
 // Pricing tiers
@@ -41,6 +42,11 @@ function Cars() {
     const navigate = useNavigate();
     const { t, i18n } = useTranslation();
 
+    const [value, setValue] = useState({
+        startDate: null,
+        endDate: null
+    });
+    
     const [startDate, setStartDate] = useState(null);
     const [endDate, setEndDate] = useState(null);
     const [selectedCar, setSelectedCar] = useState(null);
@@ -73,23 +79,23 @@ function Cars() {
     }, []);
 
     useEffect(() => {
-        if (startDate && endDate) {
-            const start = new Date(startDate);
-            const end = new Date(endDate);
+        if (value.startDate && value.endDate) {
+            const start = new Date(value.startDate);
+            const end = new Date(value.endDate);
             const diffTime = Math.abs(end - start);
             const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
             setDurationDays(diffDays);
         } else {
             setDurationDays(0);
         }
-    }, [startDate, endDate]);
+    }, [value.startDate, value.endDate]);
 
     const changeLanguage = (lang) => { i18n.changeLanguage(lang); };
 
     const isVehicleBusy = (vehicleId) => {
-        if (!startDate || !endDate) return false;
-        const start = new Date(startDate);
-        const end = new Date(endDate);
+        if (!value.startDate || !value.endDate) return false;
+        const start = new Date(value.startDate);
+        const end = new Date(value.endDate);
         return reservations.some(res => {
             if (res.vehicle_id !== vehicleId || res.status === 'failed') return false;
             const resStart = new Date(res.start_time);
@@ -123,8 +129,8 @@ function Cars() {
                 body: JSON.stringify({
                     user_id: userId,
                     vehicle_id: selectedCar,
-                    start_time: startDate,
-                    end_time: endDate,
+                    start_time: value.startDate,
+                    end_time: value.endDate,
                     duration: durationDays,
                     price: pricing.totalPrice
                 }),
@@ -549,32 +555,14 @@ function Cars() {
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                                         {/* Pickup Date */}
-                                        <div className="date-input-container">
+                                        <div className="date-input-container md:col-span-2">
                                             <label className="block text-sm font-semibold text-gray-700 mb-3">
                                                 <Calendar size={14} className="inline mr-2" />
-                                                {t('vehicles.reservationForm.pickupDate')}
+                                                {t('vehicles.reservationForm.pickupDate')} - {t('vehicles.reservationForm.returnDate')}
                                             </label>
-                                            <input
-                                                type="datetime-local"
-                                                className="date-input"
-                                                value={startDate || ''}
-                                                onChange={(e) => setStartDate(e.target.value)}
-                                            />
+                                            <Datepicker value={value} onChange={newValue => setValue(newValue)} />
                                         </div>
 
-                                        {/* Return Date */}
-                                        <div className="date-input-container">
-                                            <label className="block text-sm font-semibold text-gray-700 mb-3">
-                                                <Calendar size={14} className="inline mr-2" />
-                                                {t('vehicles.reservationForm.returnDate')}
-                                            </label>
-                                            <input
-                                                type="datetime-local"
-                                                className="date-input"
-                                                value={endDate || ''}
-                                                onChange={(e) => setEndDate(e.target.value)}
-                                            />
-                                        </div>
 
                                         {/* Duration */}
                                         <div className="stat-card">
@@ -838,8 +826,8 @@ function Cars() {
                                             <Calendar size={24} className="text-gray-600" />
                                         </div>
                                         <p className="text-sm text-gray-500 mb-1">{t('vehicles.checkout.pickup')}</p>
-                                        <p className="font-bold text-gray-900">{new Date(startDate).toLocaleDateString()}</p>
-                                        <p className="text-sm text-gray-500">{new Date(startDate).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</p>
+                                        <p className="font-bold text-gray-900">{new Date(value.startDate).toLocaleDateString()}</p>
+                                        <p className="text-sm text-gray-500">{new Date(value.startDate).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</p>
                                     </div>
                                     <div className="flex justify-center">
                                         <ArrowRight size={28} className="text-gray-300" />

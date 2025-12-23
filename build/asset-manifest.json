@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.799e6758.css",
-    "main.js": "/static/js/main.0781590a.js",
+    "main.css": "/static/css/main.94d517ff.css",
+    "main.js": "/static/js/main.b470c932.js",
     "static/js/685.bbd743e0.chunk.js": "/static/js/685.bbd743e0.chunk.js",
     "static/media/video-ad.mp4": "/static/media/video-ad.cefea0d4ac80e319abfb.mp4",
     "static/media/banner2.jpg": "/static/media/banner2.fdef9d6cc4a6576d2379.jpg",
     "static/media/image-banner.JPG": "/static/media/image-banner.901e9e57e671bb17a38f.JPG",
+    "static/media/vozilo-ad.png": "/static/media/vozilo-ad.2c3e312290839a1b8fa7.png",
     "static/media/herowp.jpg": "/static/media/herowp.15dfe351e364afea8ca3.jpg",
     "static/media/Harmonia Sans W01 Regular.otf": "/static/media/Harmonia Sans W01 Regular.9211422535a438e1a337.otf",
     "static/media/Harmonia Sans W01 Bold.otf": "/static/media/Harmonia Sans W01 Bold.9c1412d165653d6187e2.otf",
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.799e6758.css",
-    "static/js/main.0781590a.js"
+    "static/css/main.94d517ff.css",
+    "static/js/main.b470c932.js"
   ]
 }

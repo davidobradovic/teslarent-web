@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import bgimage from "../assets/image-banner.JPG"
 import bgVideo from "../assets/video-ad.mp4"
 import banner2 from "../assets/banner2.jpg"
+import voziloimg from "../assets/vozilo-ad.png"
 
 const MainScreen = () => {
     const { t, i18n } = useTranslation();
@@ -98,7 +99,7 @@ const MainScreen = () => {
                 {/* Sadržaj */}
                 <div className="relative z-10 max-w-7xl mx-auto px-6">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
-                        <div className="order-2 lg:order-1">
+                        <div className="order-1">
                             <p className="text-blue-600 font-semibold text-sm tracking-wide uppercase mb-4">{t('hero.welcome')}</p>
                             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight mb-6">
                                 {t('hero.title')}<br /><span className="text-gradient">{t('hero.titleHighlight')}</span>
@@ -132,9 +133,9 @@ const MainScreen = () => {
                                 </Link>
                             </div>
                         </div>
-                        {/* <div className="order-1 lg:order-2 relative">
-                            <img src="https://cdn.shopify.com/s/files/1/0628/1281/5558/files/TeslaSiva.png?v=1714031520" alt="Tesla Model 3" className="w-full max-w-2xl mx-auto drop-shadow-2xl" />
-                        </div> */}
+                        <div className="order-2 relative">
+                            <img src={voziloimg} alt="Tesla Model 3" className="w-full max-w-2xl mx-auto drop-shadow-2xl" />
+                        </div>
                     </div>
                 </div>
             </section>
